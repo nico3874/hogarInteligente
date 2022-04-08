@@ -1,0 +1,874 @@
+/*Reset*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Tipo y tamaño de fuentes*/
+
+html{
+    font-size: 62.5%;
+    font-family: 'Playfair Display', serif;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.4rem;
+}
+
+p{
+    font-size: 1.8rem;
+}
+
+/*Estructura*/
+
+#grilla{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 150px 4fr 3fr 3fr 3fr 280px;
+    grid-template-areas:"header header header"
+                        "section1 section1 section1"
+                        "section2 section2 section2"
+                        "section3 section3 section3"
+                        "section4 section4 section4"
+                        "footer footer footer";
+}
+
+#grillaTienda{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 150px 4fr 280px;
+    grid-template-areas:"header header header"
+                        "section1 section1 section1"
+                        "footer footer footer";
+}
+
+
+#grillaContacto{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 150px 1fr 4fr 280px;
+    grid-template-areas:"header header header"
+                        "section1 section1 section1"
+                        "section2 section2 section2"
+                        "footer footer footer";
+}
+
+#grillaNosotros{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 150px 2fr 2fr 280px;
+    grid-template-areas:"header header header"
+                        "section1 section1 section1"
+                        "section2 section2 section2"
+                        "footer footer footer";
+}
+
+#grillaProductos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 150px 2fr 2fr 280px;
+    grid-template-areas:"header header header"
+                        "section1 section1 section1"
+                        "section2 section2 section2"
+                        "footer footer footer";
+}
+
+
+/*---Estilos Header---*/
+header{
+    
+    background-color: rgb(55, 85, 109);
+    position: sticky;
+    top: 0px;
+    grid-area: header;
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    justify-content: space-around;
+    
+
+}
+
+nav ul{
+    
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+
+
+nav ul li{
+   
+    list-style-type: none;
+    margin:0px 20px;
+    
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 2.5rem;
+}
+
+
+   
+
+
+
+.logo img{
+    width: 70%;
+    
+
+}
+
+
+.buscador{
+     border-radius: 20px;
+     height: 30px;
+}
+
+.btn{
+    background-color: rgb(55, 85, 109);
+    
+}
+
+.redes ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.redes li{
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+
+/* Sección Presentación del sitio*/
+
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url("https://aycrevista.com.ar/wp-content/uploads/2015/11/domotica-02.jpg");
+    text-align: center;
+    background-size:cover;
+    grid-area: section1;
+    color: white;
+    text-shadow: black 0 -2px ;
+      
+}
+
+
+
+.presentacion p{
+    margin: 0px 400px;
+    position: relative;
+    bottom: 110px;
+    
+   
+   
+}
+
+/*Sección argumentación*/
+
+.argumento {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    background-color: rgba(127, 255, 212, 0.397);
+    height: auto;
+    grid-area: section2;
+}
+
+.argumento h1{
+    margin: 5px 0px 10px 0px;
+}
+
+.argumento p{
+   
+    text-align: justify;  
+    padding: 2%;  
+}
+
+/*Sección Imagenes con argumentos*/
+
+.contenImagenes{
+    display: flex;
+    justify-content: center;
+    margin: 60px 0px;
+    grid-area: section3;
+}
+
+.imagenes{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px 10px;
+    
+    
+    
+}
+
+.imagenes h2{
+    margin-bottom: 30px;
+}
+
+.imagenes img{
+    margin-bottom: 30px;
+    border: solid 4px rgb(55, 85, 109);
+
+}
+
+.imagenes p{
+    margin: 0px 15px;
+}
+
+/*Seccion ventajas y alternativas*/
+
+.ventajas{
+    grid-area: section4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(127, 255, 212, 0.397);
+    
+}
+
+.ventajas h1{
+    align-self: center;
+    margin-bottom: 50px;
+    padding-top: 60px;
+}
+
+.ventajasBloque{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 60px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+
+
+/*Footer*/
+
+
+footer{
+    background-color: rgb(55, 85, 109);
+    font-size: 1.7rem;
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    text-align: center;
+    padding-top: 80px;
+    
+}
+
+footer li{
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+
+footer a {
+   
+    color: black;
+}
+
+/*Pagina de contacto*/
+
+
+
+.contacto{
+    grid-area: section1;
+
+    text-align: center;
+    margin: 50px 0px;
+    padding-top: 70px;
+
+}
+
+.contacto h2{
+    margin: 8px;
+}
+
+.form{
+    grid-area: section2;
+    display:grid;
+    
+    
+}
+
+
+.entradas{
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    margin: 30px 10px;
+    
+    
+    
+}
+
+
+
+.entradas input{
+    
+    height: 40px;
+    margin-left: 10px;
+}
+
+.entradas label{
+    
+   
+    font-size: 1.7rem;
+    text-align: left;
+}
+
+.entradas select{
+    
+    height: 40px;
+    margin-left: 10px;
+}
+
+.entradas textarea{
+   
+    margin-left: 10px;
+   
+}
+
+.btnForm{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.btnForm input{
+    
+    width: 100%;
+    height: 40px;
+    background-color: rgb(55, 85, 109);
+    
+
+}
+
+
+
+/*Pagina Nosotros*/
+
+.nosotros{
+    grid-area: section1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+
+}
+.nosotrosTexto{
+    display: flex;
+    flex-direction: column;
+}
+
+.nosotrosTexto p{
+    text-align: justify;
+    margin: 0px 50px;
+}
+
+
+
+
+
+
+.pasion{
+    grid-area: section1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.pasionTexto p{
+    
+    text-align: justify;
+    margin: 0px 50px;
+}
+
+
+
+
+/* Sección Productos y servicios */
+
+.servicios{
+	grid-area: section1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	
+}
+.servicios h1{
+    margin-top: 60px;
+}
+
+.servicios p{
+	text-align:justify;
+	margin: 60px 0px;
+    padding: 0% 25%;
+
+}
+
+.servicios iframe{
+	width: 70%;
+	border: solid 3px rgb(55, 85, 109);
+	margin: 70px 0px;
+}
+
+.contentProductos{
+    grid-area: section2;
+    display:flex;
+    flex-wrap: wrap;
+}
+	
+.productos{
+	width:30%;
+	text-align: center;
+	display: inline-block;
+    margin: 15px;
+    padding-bottom: 50px;
+}
+
+.productos h3{
+    font-size: 1.9rem;
+    padding-bottom: 15px;
+}
+
+
+
+.productos  p{
+    
+    margin-top:30px;
+}
+
+.enlaceTienda{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(55, 85, 109);
+}
+
+/*Sección Tienda*/
+
+#tienda{
+    grid-area: section1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 90px;
+    padding-bottom: 30px;
+    border-bottom: solid 3px rgb(55, 85, 109);
+
+}
+
+.titulos{
+    text-align: center;
+    margin: 70px 0px;
+}
+
+.contenedorVentas{
+    display:grid;
+    grid-template-columns: 1fr 2fr ;
+    grid-template-rows: auto;
+    grid-template-areas: "filtros vidriera";
+    
+}
+
+
+.filtros{
+    grid-area: filtros;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: solid 3px rgb(55, 85, 109);
+    
+}
+
+
+
+.filtros h3{
+    font-size: 2.2rem;
+    margin: 80px 0px;
+
+}
+
+.filtros li{
+    list-style-type: none;
+    margin: 20px 0px;
+}
+
+.filtros a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.9rem;
+    
+}
+
+.botonTienda{
+    margin-top: 20px;
+    width: 150px;
+    height: 30px;
+    background-color: rgb(55, 85, 109);
+    font-family: 'Playfair Display', serif;
+}
+
+.vidriera{
+    grid-area: vidriera;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+   
+}
+
+
+.articulos{
+    width: 45%;
+    margin-top: 50px;
+}
+
+.articulos h3{
+    font-size: 2rem;
+}
+
+/*-------------Diseños adaptables Tablet----------------*/
+
+@media screen and (max-width:1200px){
+   /*Estructura*/
+    
+    #grilla{
+        grid-template-rows: 100px 1.5fr 2fr 3fr 2fr 250px;
+    }
+
+    #grillaTienda{
+        grid-template-rows: 100px 8.5fr 250px;
+        
+    }
+
+    #grillaNosotros{
+        
+        
+        grid-template-rows: 100px 2fr 2fr 250px;
+        
+    }
+
+    /*Header*/
+    
+    
+    header{
+        justify-content: space-evenly;
+    }
+
+    .logo{
+        justify-content: right;
+    }
+    
+    .logo img{
+        width: 40%;
+        
+    
+    }
+    
+    nav ul li{
+   
+        list-style-type: none;
+        margin:0px 12px;
+    }    
+    
+
+    nav ul li a{
+        
+        font-size: 1.3rem;
+    }
+
+    
+    .buscador{
+        border-radius: 20px;
+        height: 15px;
+        width: 100px;
+    }
+
+    .btn{
+    background-color: rgb(55, 85, 109);
+    }
+
+    .redes ul{
+    display: flex;
+    flex-direction: column;
+    
+    }
+    /* Sección Presentación del sitio*/
+
+    .presentacion{
+        justify-content: none;
+    }
+    
+    .presentacion p{
+        margin: 0px 100px;
+        position: relative;
+        bottom: 110px;
+        
+    
+    
+    }
+
+    /*Sección Imagenes con argumentos*/
+
+    .contenImagenes{
+        flex-direction: column;
+    }
+
+    .imagenes{
+        margin-bottom: 70px;
+    }
+
+    /*Pagina Nosotros*/
+
+    .nosotros{
+        flex-direction: column;
+    }
+
+    .nosotrosTexto{
+        display: flex;
+        flex-direction: column;
+        margin: 70px;
+    }
+
+    .pasionTexto{
+        display: flex;
+        flex-direction: column;
+        margin: 70px;
+    }
+
+    .pasion{
+        flex-direction: column;
+
+    }
+
+    
+    .nosotrosImagen{
+        display: flex;
+        flex-direction: column;
+        border-left: solid 3px rgb(55, 85, 109);
+        width: 100%;
+        
+    }
+
+    .pasionImagen{
+        display: flex;
+        flex-direction: column;
+        border-right: solid 3px rgb(55, 85, 109);
+        width: 100%;
+        order:1;
+        margin-bottom: 70px;
+    }
+
+    
+
+
+
+}
+
+/*------------------Diseño adaptado para Celulares----------------------*/
+
+@media screen and (max-width:768px){
+
+    html{
+        font-size: 45%;
+    }
+
+    /*Grillas*/
+
+    #grilla{
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 0.7fr 1.5fr 1.2fr 2fr 600px;
+    }
+
+    #grillaTienda{
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px auto 600px;
+        
+    }
+
+    #grillaContacto{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 150px 1fr 4fr 600px;
+        grid-template-areas:"header header header"
+                            "section1 section1 section1"
+                            "section2 section2 section2"
+                            "footer footer footer";
+    }
+
+    /*Header*/
+
+    .logo{
+        justify-content: center;
+    }
+
+    nav ul li{
+   
+        list-style-type: none;
+        margin:0px 6px;
+    }    
+    
+
+   
+   
+
+    .buscador{
+        display: none;
+    }
+
+    .btn{
+        display: none;
+    }
+
+    .redes{
+        display: none;
+    }
+
+    /*Presentación sitio*/
+    .presentacion{
+        
+        background-repeat: no-repeat;
+    }
+
+
+    .presentacion p{
+        margin: 80px 20px;
+        padding-top: 50px;
+    }
+
+    /*Sección Argumentación*/
+
+    .argumento h1{
+        margin: 5px 0px 10px 0px;
+        text-align: center;
+    }
+    
+    .argumento p{
+       
+        text-align: justify;  
+        padding: 20px;  
+    }
+
+    /*Sección Ventajas*/
+    .ventajasBloque{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 60px;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .ventajasMargen{
+        margin: 10px 0px;
+    }
+
+    /*Footer*/
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        
+    }
+    footer div{
+        margin-top: 30px;
+    }
+
+    /*Tienda*/
+    
+    
+    .contenedorVentas{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filtros{
+        border-bottom: solid 3px rgb(55, 85, 109);
+        border-right: none;
+    }
+
+    .filtros ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .filtros ul li{
+        margin-right: 15px;
+
+    }
+
+    .vidriera{
+        flex-direction: column;
+    }
+
+    .articulos{
+        width: auto;
+    }
+    
+    .articulos p{
+        margin: 0px 6px;
+    }
+
+    /*Pagina Nosotros*/
+
+    .pasionTexto p{
+        margin: 0px 2px;
+    }
+
+    .nosotrosTexto p{
+        margin: 0px 2px;
+    }
+
+    /*Pagina Productos y Servicios*/
+    #grillaProductos{
+        
+        
+        grid-template-rows: 150px 1fr 2fr 600px;
+    }    
+
+}    
+
+
+
+
+
+
+
+
+
+
+
+
+

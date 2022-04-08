@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=Hogar, initial-scale=1.0">
+    <link rel="shortcut icon" href="Image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>Hogar Inteligente</title>
+</head>
+<body id="grillaContacto">
+     <!--Logo + nav + search -->
+     
+     <header >
+        <div class="logo">
+            <img src="../image/logo2.png" alt="Logo">
+        </div>  
+        
+         <nav>
+            <ul>
+                <li><a href="../Index.html">Inicio</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Productos.html">Productos y Servicios</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="Tienda.html">Tienda</a></li>
+            </ul>
+        </nav>
+        <div>
+            <form   action="">
+                <input class="buscador" type="search">
+                <button class="btn" type="button"><img src="../image/lupa.png" alt="lupa"></button>
+            </form>
+        </div>
+        <div class="redes">
+                <ul>
+                    <li><a href="#"><img src="../image/face.png" alt="Facebbok"></a></li>
+                    <li><a href="#"><img src="../image/twitter.png" alt="twitter"></a></li>
+                    <li><a href="#"><img src="../image/instagram.png" alt="Instagram"></a></li>
+                </ul>
+        </div>
+    </header>
+        <!--Fin de Logo + nav + search-->
+
+     <section class="contacto">
+        <h1>CONTACTO</h1>
+        <h2>Solicita tu presupuesto</h2>
+     </section>
+
+     <!--formulario de contacto--> <!--Se utiliza <br> hasta que se incorpore el CSS-->
+     <section class="form">
+        <article>
+            <form class="form" action="#">
+                <div class="entradas">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" name="Nombre" placeholder="Ingresa tu Nombre">
+                </div>
+                <div class="entradas">
+                    <label for="Email">Email </label>
+                    <input type="email" name="Email" placeholder="Ingresa tu Email">
+                </div>
+                <div class="entradas">
+                    <label for="Edad">Edad </label>
+                    <input type="number" name="Edad" placeholder="ingresa tu edad">
+                </div>
+                <div class="entradas">               
+                    <label for="Sexo">Sexo</label>
+                    <select name="Sexo" id="">
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Prefiero no especificar">Prefiero No especificar</option>
+                    </select>
+                </div>
+                <div class="entradas">
+                    <label for="Comentario" id="labelComentario">Agrega un Comentario</label>
+                    <textarea name="Comentario" cols="30" rows="10" placeholder="Escribe aquí"></textarea>
+                </div>
+                <div class="btnForm">
+                    <input type="submit" value="Enviar Formulario">
+                    <input type="reset" value="Limpiar Formulario">
+                </div>
+            </form>
+        </article>
+     </section>
+    <!--Cierre de formulario de contacto-->
+
+    <!--Inicio del footer-->
+   
+    <footer>
+        <div>
+            <h4>Dirección</h4>
+                <ul>
+                    <li>Los Aromos 500</li>
+                    <li>Oliva</li>
+                    <li>Córdoba - Argentina</li>
+                </ul>
+        </div>
+        <div>
+            <h4>Legales</h4>
+                <ul>
+                    <li>
+                        <a href="#">Terminos y condiciones</a>
+                    </li>
+                </ul>
+                
+        </div>
+        <div>
+            <h4>Contacto</h4>
+                <ul>
+                    <li>Whatsapp - 9999999</li>
+                    <li>Email - HogarIntel@hi.com.ar</li>
+                    <li>Tel - 88888888</li>
+                </ul>
+        </div>
+        <div>
+            <h4>Nuestras Redes Sociales</h4>
+                <ul>
+                    <li><a href="#"><img src="../image/face.png" alt="Facebbok"></a></li>
+                    <li><a href="#"><img src="../image/twitter.png" alt="twitter"></a></li>
+                    <li><a href="#"><img src="../image/instagram.png" alt="Instagram"></a></li>
+                </ul>
+        </div>
+    </footer>
+
+    <!--Fin del Footer-->
+</body>
+</html>
