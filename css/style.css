@@ -82,7 +82,7 @@ p{
 /*---Estilos Header---*/
 header{
     
-    /* background-color: rgb(55, 85, 109); */
+    
     background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
     position: sticky;
     top: 0px;
