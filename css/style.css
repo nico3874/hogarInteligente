@@ -29,7 +29,7 @@ p{
 #grilla{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 150px 4fr 3fr 3fr 3fr 280px;
+    grid-template-rows: 150px 2.5fr 3fr 3fr 3fr 280px;
     grid-template-areas:"header header header"
                         "section1 section1 section1"
                         "section2 section2 section2"
@@ -82,7 +82,8 @@ p{
 /*---Estilos Header---*/
 header{
     
-    background-color: rgb(55, 85, 109);
+    
+    background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
     position: sticky;
     top: 0px;
     grid-area: header;
@@ -126,7 +127,10 @@ nav ul li a{
 
 .logo img{
     width: 70%;
-    
+    animation-iteration-count: infinite;  
+    animation-duration: 7s;
+    border: solid 3px white;
+    border-radius: 20px;  
 
 }
 
@@ -152,6 +156,15 @@ nav ul li a{
     margin-left: 10px;
 }
 
+.redes img{
+    
+    transition: height 1s;
+}
+
+.redes a img:hover{
+    height: 30px;
+}
+
 
 /* Sección Presentación del sitio*/
 
@@ -160,12 +173,21 @@ nav ul li a{
     flex-direction: column;
     justify-content: space-around;
     background-image: url("https://aycrevista.com.ar/wp-content/uploads/2015/11/domotica-02.jpg");
-    text-align: center;
+    align-items: center;
     background-size:cover;
     grid-area: section1;
     color: white;
     text-shadow: black 0 -2px ;
       
+}
+
+.presentacionTitulo{
+    border: solid 3px white;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
+    width: 30%;
+    text-align: center;
+    
 }
 
 
@@ -174,6 +196,10 @@ nav ul li a{
     margin: 0px 400px;
     position: relative;
     bottom: 110px;
+    background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
+    border: solid 3px white;
+    border-radius: 20px;
+    padding: 20px;
     
    
    
@@ -187,13 +213,17 @@ nav ul li a{
     justify-content: center;
     align-items: center;
     line-height: 2;
-    background-color: rgba(127, 255, 212, 0.397);
+    background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
+
     height: auto;
     grid-area: section2;
 }
 
 .argumento h1{
     margin: 5px 0px 10px 0px;
+    border: solid 3px white;
+    border-radius: 20px;
+    padding: 0px 10px;
 }
 
 .argumento p{
@@ -242,7 +272,9 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(127, 255, 212, 0.397);
+    /* background-color: rgba(127, 255, 212, 0.397); */
+    background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
+
     
 }
 
@@ -268,7 +300,8 @@ nav ul li a{
 
 
 footer{
-    background-color: rgb(55, 85, 109);
+   /*  background-color: rgb(55, 85, 109); */
+   background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
     font-size: 1.7rem;
     grid-area: footer;
     display: flex;
@@ -289,6 +322,14 @@ footer li{
 footer a {
    
     color: black;
+}
+
+footer img{
+    transition: height 1s;
+}
+
+footer img:hover{
+    height: 30px;
 }
 
 /*Pagina de contacto*/
@@ -389,6 +430,7 @@ footer a {
     text-align: justify;
     margin: 0px 50px;
 }
+
 
 
 
@@ -586,6 +628,8 @@ footer a {
     .logo{
         justify-content: right;
     }
+
+    
     
     .logo img{
         width: 40%;
@@ -626,6 +670,8 @@ footer a {
     .presentacion{
         justify-content: none;
     }
+
+    
     
     .presentacion p{
         margin: 0px 100px;
@@ -758,10 +804,17 @@ footer a {
         background-repeat: no-repeat;
     }
 
+   .presentacionTitulo{
+       width: 70%;
+       margin: 50px 0px;
+    
+   }
+
+   
 
     .presentacion p{
-        margin: 80px 20px;
-        padding-top: 50px;
+        margin: 150px 20px;
+        padding-top: 30px;
     }
 
     /*Sección Argumentación*/
