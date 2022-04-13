@@ -14,178 +14,249 @@
     <link rel="stylesheet" href="css/themify-icons.css">
     <title>Hogar Inteligente</title>
 </head>
-<body id="grilla">
+<body>
     <!--Logo + nav + search --->
-    <header>
-        <div class="logo">
-            <img class="animate__animated animate__bounceOut" src="image/logo2.png" alt="Logo">
-        </div>  
+    <div class="container-fluid">
+        <header clas="row">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand linkLogo col-2" href="#">
+                        <div class="logo">
+                            <img src="image/logo2.png" alt="Logo">
+                        </div>  
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse col-6" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="pages/Nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="pages/Productos.html">Productos y Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="pages/Contacto.html">Contactos</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="pages/Tienda.html">Tienda</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex separarIconos col-2">
+                            <input class="buscador" type="search">
+                            <button class="btnBuscador" type="submit"><img src="image/lupa.png" alt="lupa"></button>
+                        </form>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-2">
+                            <li  class="nav-item redes"><a href="#"><img src="image/face.png" alt="Facebbok"></a></li>
+                            <li  class="nav-item redes"><a href="#"><img src="image/twitter.png" alt="twitter"></a></li>
+                            <li  class="nav-item redes"><a href="#"><img src="image/instagram.png" alt="Instagram"></a></li>
+                        </ul>
+                        
+                    </div>
+                    <div class="redes">
+                        
+                    </div>
+                </div>
+            </nav>
+                
+        </header>
         
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/Nosotros.html">Nosotros</a></li>
-                <li><a href="pages/Productos.html">Productos y Servicios</a></li>
-                <li><a href="pages/Contacto.html">Contacto</a></li>
-                <li><a href="pages/Tienda.html">Tienda</a></li>
-            </ul>
-        </nav>
-        <div>
-            <form  action="">
-                <input class="buscador" type="search">
-                <button class="btn" type="button"><img src="image/lupa.png" alt="lupa"></button>
-            </form>
-        </div>
-        <div class="redes">
-                <ul>
-                    <li><a href="#"><img src="image/face.png" alt="Facebbok"></a></li>
-                    <li><a href="#"><img src="image/twitter.png" alt="twitter"></a></li>
-                    <li><a href="#"><img src="image/instagram.png" alt="Instagram"></a></li>
-                </ul>
-        </div>
-    </header>
-    <!--Fin de Logo + nav + search--> 
+        <!--Fin de Logo + nav + search--> 
 
-    <!--Presentación de mi sitio-->
+        <!--Presentación de mi sitio-->
 
-    <section class="presentacion">
-        <div class="presentacionTitulo animate__animated animate__backInLeft">
-            <h1>Hogar Inteligente</h1>
-        </div>
-        <h2 class="animate__animated animate__backInRight">El futuro...Ahora</h2>
-        <p class="animate__animated animate__backInLeft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam cumque, harum repudiandae impedit ab rerum facilis modi, vel doloremque dolor quis aliquid quisquam molestiae sunt nulla exercitationem eos recusandae! Iure, qui aliquam. Aspernatur tempore harum ullam laboriosam soluta maxime saepe assumenda veritatis eius ut temporibus et blanditiis asperiores eligendi, commodi autem. Explicabo delectus est unde sed consequatur assumenda, nisi excepturi.</p>
-    </section>
-        <!--Final de la la sección de presentación-->
+        <section class="row presentacion">
+            <div class="presentacionTitulo animate__animated animate__backInLeft">
+                <h1>Hogar Inteligente</h1>
+            </div>
+            <h2 class="animate__animated animate__backInRight">El futuro...Ahora</h2>
+            <p class="animate__animated animate__backInLeft col-lg-9 col-11">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam cumque, harum repudiandae impedit ab rerum facilis modi, vel doloremque dolor quis aliquid quisquam molestiae sunt nulla exercitationem eos recusandae! Iure, qui aliquam. Aspernatur tempore harum ullam laboriosam soluta maxime saepe assumenda veritatis eius ut temporibus et blanditiis asperiores eligendi, commodi autem. Explicabo delectus est unde sed consequatur assumenda, nisi excepturi.</p>
+        </section>
+            <!--Final de la la sección de presentación-->
 
-        <!--Inicio de sección de argumentacióm-->
-    <section class="argumento">
-        <h1>¿Por qué debemos automatizar nuestro Hogar?</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-        Nesciunt, corporis recusandae laborum repellat quisquam 
-        rem esse fugiat vero alias, consequuntur, dignissimos eius dolores iure sit similique obcaecati iusto ipsum reiciendis explicabo. Corrupti minima id modi pariatur labore quam libero quisquam, autem, beatae magnam ipsum repellendus consectetur
-        . Ducimus cupiditate fugit unde delectus nesciunt, sequi libero aliquid. Voluptatum culpa ut incidunt ullam. Suscipit delectus in autem fugiat labore exercitationem magnam, ipsa quibusdam? Labore dolores ducimus accusamus quibusdam temporibus cupiditate consectetur voluptas vel ex eos. Ea facere 
-        doloremque molestiae consequatur blanditiis modi nam autem. Eligendi praesentium eius ipsa porro neque voluptas sed aut tempora veniam, cupiditate atque odit similique aperiam ducimus repudiandae dolorem consequuntur, fugit dolores possimus est eaque in. Corporis, exercitationem voluptates nihil illum necessitatibus delectus cum officia
-         placeat quidem illo, beatae totam. Voluptate fugiat, pariatur vitae dolor amet facere nisi perspiciatis illo eveniet sapiente? Et sed debitis tempora rerum nemo in rem minima? Fuga rem libero deserunt obcaecati beatae aspernatur quaerat quisquam quis tempore, maxime,
-         repellendus numquam laudantium ipsam? Quasi voluptates a et hic ab? Similique atque architecto, iure cum, iusto earum error impedit, veritatis corrupti enim nemo optio. Voluptatibus, magni? Nemo molestias praesentium maiores ipsa, explicabo incidunt totam
-          hic perferendis.</p>
-    </section>
-        <!--Fin de sección de argumentación-->
-    
-    <!--Inicio Sección Imagenes--->
+            <!--Inicio de sección de argumentacióm-->
+        <section class="row argumento">
+            <h1 class="col-lg-6 col-md-8 col-sm-12 col-xs-12">¿Por qué debemos automatizar nuestro Hogar?</h1>
+            <p class="col-10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Nesciunt, corporis recusandae laborum repellat quisquam 
+            rem esse fugiat vero alias, consequuntur, dignissimos eius dolores iure sit similique obcaecati iusto ipsum reiciendis explicabo. Corrupti minima id modi pariatur labore quam libero quisquam, autem, beatae magnam ipsum repellendus consectetur
+            . Ducimus cupiditate fugit unde delectus nesciunt, sequi libero aliquid. Voluptatum culpa ut incidunt ullam. Suscipit delectus in autem fugiat labore exercitationem magnam, ipsa quibusdam? Labore dolores ducimus accusamus quibusdam temporibus cupiditate consectetur voluptas vel ex eos. Ea facere 
+            doloremque molestiae consequatur blanditiis modi nam autem. Eligendi praesentium eius ipsa porro neque voluptas sed aut tempora veniam, cupiditate atque odit similique aperiam ducimus repudiandae dolorem consequuntur, fugit dolores possimus est eaque in. Corporis, exercitationem voluptates nihil illum necessitatibus delectus cum officia
+            placeat quidem illo, beatae totam. Voluptate fugiat, pariatur vitae dolor amet facere nisi perspiciatis illo eveniet sapiente? Et sed debitis tempora rerum nemo in rem minima? Fuga rem libero deserunt obcaecati beatae aspernatur quaerat quisquam quis tempore, maxime,
+            repellendus numquam laudantium ipsam? Quasi voluptates a et hic ab? Similique atque architecto, iure cum, iusto earum error impedit, veritatis corrupti enim nemo optio. Voluptatibus, magni? Nemo molestias praesentium maiores ipsa, explicabo incidunt totam
+            hic perferendis.</p>
+        </section>
+            <!--Fin de sección de argumentación-->
+        
+        <!--Inicio Sección Imagenes--->
 
-    <section class="contenImagenes">
-        <div class="imagenes">
-            <h2>Acceso total a tu hogar</h2>
-            <img src="image/imagen_a.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias fugit quibusdam quod laborum adipisci odit, nisi corrupti accusamus numquam dolorum?</p>
-        </div>
+        <section class="row contenImagenes">
+            <div class="card-group">
+                <div class="card">
+                  <div class="card-body imagenes">
+                    <h2 class="card-title">Acceso total a tu hogar</h2>
+                    <img src="image/imagen_a.png" class="card-img-top" alt="Acceso al hogar">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis nihil incidunt, architecto, quod vel id molestias quae, ex alias voluptas placeat consequuntur facilis temporibus?</p>
+                  </div>
+                </div>
+                <div class="card">
+                 
+                  <div class="card-body imagenes">
+                    <h2 class="card-title">Seguridad Inteligente</h2>
+                    <img src="image/imagen_b.png" class="card-img-top" alt="Seguridad Inteligente">
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, molestias dolorum. Quis quas placeat provident molestiae. Odio veniam in deleniti quia voluptatem sapiente reprehenderit ea! </p>
+                  </div>
+                </div>
+                
+              </div>
+        </section>
 
-        <div class="imagenes">
-            <h2>Seguridad Inteligente</h2>
-            <img src="image/imagen_b.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias fugit quibusdam quod laborum adipisci odit, nisi corrupti accusamus numquam dolorum?</p>
-        </div>
-    </section>
 
-    <!--Fin de Sección Imagenes-->
+        <!--Fin de Sección Imagenes-->
 
-    <!--Inicio de Sección Ventajas-->
-    
-    <section class="ventajas">
-        <h1>Todas las opciones</h1>
-        <div class="ventajasBloque">
-            <div class="ventajasMargen">
+        <!--Inicio de Sección Ventajas-->
+        
+        <section class="row ventajas">
+            <h1>Todas las opciones</h1>
+            
+            <div class="ventajasMargen col-lg-4 col-md-6 col-sm-12">
                 <img src="image/aire-acondicionado1.png" alt="climatización">
                 <p>Climatización</p>
             </div>
-            <div class="ventajasMargen">
+            <div class="ventajasMargen col-lg-4 col-md-6 col-sm-12">
                 <img src="image/asitente copia.png" alt="Asistente">
                 <p>Asistentes por voz</p>
             </div>
-            <div class="ventajasMargen">
+            <div class="ventajasMargen col-lg-4 col-md-6 col-sm-12">
                 <img src="image/cctv copia.png" alt="Circuito Cerrado Tv">
                 <p>CCTV</p>
             </div>
-        </div class="ventajasMargen">
-        <div class="ventajasBloque">
-            <div class="ventajasMargen">
+        
+        
+            <div class="ventajasMargen col-lg-4 col-md-6 col-sm-12">
                 <img src="image/foco copia.png" alt="Iluminación">
                 <p>Iluminación</p>
             </div>
-            <div class="ventajasMargen">
+            <div class="ventajasMargen col-lg-4 col-md-6 col-sm-12">
                 <img src="image/puerta copia.png" alt="Cerradura">
                 <p>Cerraduras Inteligentes</p>
             </div>
-            <div class="ventajasMargen">
+            <div class="ventajasMargen col-lg-4 col-md-6 col-sm-12">
                 <img src="image/app copia.png" alt="App">
                 <p>APPs Originales</p>
             </div>        
-        </div>
-        <div class="ventajasBloque">
-            <div class="ventajasMargen">
+        
+        
+            <div class="ventajasMargen col-lg-4 col-md-6 col-sm-12">
                 <img src="image/portones copia.png" alt="Portones">
                 <p>Apertura de portones</p>
             </div>
-            <div class="ventajasMargen">
+            <div class="ventajasMargen col-lg-4 col-md-6 col-sm-12">
                 <img src="image/detector de humedad.png" alt="Detector de humedad">
                 <p>Detección de Humedad</p>
             </div>
-            <div class="ventajasMargen">
+            <div class="ventajasMargen col-lg-4 col-md-6 col-sm-12">
                 <img src="image/termometro copia.png" alt="Termometro">
                 <p>Control de temperatura</p>
             </div>        
-        </div>
+            
+            
+
+        </section>
+
+        <!--Fin Sección Ventajas-->
         
 
-    </section>
+        <!-- Inicio Sección Carrusel -->
 
-    <!--Fin Sección Ventajas-->
-    
+        <section class="row carruselContent">
+            <div id="carouselExampleCaptions" class="carousel slide carruselAncho" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="image/carrusel1.png" class="d-block w-100 "   alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>¿Qué estas esperando?</h2>
+                      
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/carrusel2.png" class="d-block w-100 " alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>¿Qué estas esperando?</h2>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="image/carrusel3.png" class="d-block w-100 " alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>¿Qué estas esperando?</h2>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+        <!-- Fin de la sección Carrusel -->
 
 
-    <!--Inicio del footer-->
-    <footer>
-        <div>
-            <h4>Dirección</h4>
-                <ul>
-                    <li>Los Aromos 500</li>
-                    <li>Oliva</li>
-                    <li>Córdoba - Argentina</li>
-                </ul>
-        </div>
-        <div>
-            <h4>Legales</h4>
-                <ul>
-                    <li>
-                        <a href="#">Terminos y condiciones</a>
-                    </li>
-                </ul>
-                
-        </div>
-        <div>
-            <h4>Contacto</h4>
-                <ul>
-                    <li>Whatsapp - 9999999</li>
-                    <li>Email - HogarIntel@hi.com.ar</li>
-                    <li>Tel - 88888888</li>
-                </ul>
-        </div>
-        <div>
-            <h4>Nuestras Redes Sociales</h4>
-                <ul>
-                    <li><a href="#"><img src="image/face.png" alt="Facebbok"></a></li>
-                    <li><a href="#"><img src="image/twitter.png" alt="twitter"></a></li>
-                    <li><a href="#"><img src="image/instagram.png" alt="Instagram"></a></li>
-                </ul>
-        </div>
-    </footer>
+        <!--Inicio del footer-->
+        <footer class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <h4>Dirección</h4>
+                    <ul>
+                        <li>Los Aromos 500</li>
+                        <li>Oliva</li>
+                        <li>Córdoba - Argentina</li>
+                    </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <h4>Legales</h4>
+                    <ul>
+                        <li>
+                            <a href="#">Terminos y condiciones</a>
+                        </li>
+                    </ul>
+                    
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <h4>Contacto</h4>
+                    <ul>
+                        <li>Whatsapp - 9999999</li>
+                        <li>Email - HogarIntel@hi.com.ar</li>
+                        <li>Tel - 88888888</li>
+                    </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <h4>Nuestras Redes Sociales</h4>
+                    <ul>
+                        <li><a href="#"><img src="image/face.png" alt="Facebbok"></a></li>
+                        <li><a href="#"><img src="image/twitter.png" alt="twitter"></a></li>
+                        <li><a href="#"><img src="image/instagram.png" alt="Instagram"></a></li>
+                    </ul>
+            </div>
+        </footer>
 
-    
-    <!--Fin del Footer-->
-    
-    <!-- Script Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-
+        
+        <!--Fin del Footer-->
+        
+        <!-- Script Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    </div>
 </body>
 </html>
