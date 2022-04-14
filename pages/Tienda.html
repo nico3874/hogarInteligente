@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=Hogar, initial-scale=1.0">
-    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,150 +14,185 @@
 </head>
 <body id="grillaTienda">
      <!--Logo + nav + search -->
-      
-    <header >
-        <div class="logo">
-            <img src="../image/logo2.png" alt="Logo">
-        </div>  
-        
-         <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="Nosotros.html">Nosotros</a></li>
-                <li><a href="Productos.html">Productos y Servicios</a></li>
-                <li><a href="Contacto.html">Contacto</a></li>
-                <li><a href="Tienda.html">Tienda</a></li>
-            </ul>
-        </nav>
-        <div>
-            <form  action="">
-                <input class="buscador" type="search">
-                <button class="btn" type="button"><img src="../image/lupa.png" alt="lupa"></button>
-            </form>
-        </div>
-        <div class="redes">
-                <ul>
-                    <li><a href="#"><img src="../image/face.png" alt="Facebbok"></a></li>
-                    <li><a href="#"><img src="../image/twitter.png" alt="twitter"></a></li>
-                    <li><a href="#"><img src="../image/instagram.png" alt="Instagram"></a></li>
-                </ul>
-        </div>
-    </header>
-    <!--Fin de Logo + nav + search-->
+    <div class="container-fluid">
+        <header clas="row">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand linkLogo col-2" href="#">
+                        <div class="logo">
+                            <img src="../image/logo2.png" alt="Logo">
+                        </div>  
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse col-6" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="Productos.html">Productos y Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="Contacto.html">Contactos</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="Tienda.html">Tienda</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex separarIconos col-2">
+                            <input class="buscador" type="search">
+                            <button class="btnBuscador" type="submit"><img src="../image/lupa.png" alt="lupa"></button>
+                        </form>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-2">
+                            <li  class="nav-item redes"><a href="#"><img src="../image/face.png" alt="Facebbok"></a></li>
+                            <li  class="nav-item redes"><a href="#"><img src="../image/twitter.png" alt="twitter"></a></li>
+                            <li  class="nav-item redes"><a href="#"><img src="../image/instagram.png" alt="Instagram"></a></li>
+                        </ul>
+                        
+                    </div>
+                    <div class="redes">
+                        
+                    </div>
+                </div>
+            </nav>
+                
+        </header>
+        <!--Fin de Logo + nav + search-->
 
-<!--Sección Tienda-->
-    <section id="tienda">
-        <div class="titulos">
-            <h1>Nuestra Tienda</h1>
-            <h2>Encuentra lo que estas buscando</h2>
-        </div>
-        <div class="contenedorVentas">
-            <div class="filtros">
-                <h3>Categorias</h3>
-                <ul>
-                    <li><a href="#">Asistentes</a></li>
-                    <li><a href="#">iluminación</a></li>
-                    <li><a href="#">Interruptores</a></li>
-                    <li><a href="#">Seguridad</a></li>
-                    <li><a href="#">Confort</a></li>
-                </ul>
-            </div>
-            <div class="vidriera">
-                <div class="articulos">
-                    <h3>Alexa</h3>
-                    <img src="../image/alexa.png" alt="Amazon Alexa">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, debitis. Accusamus illum ex, quod explicabo commodi adipisci impedit tempore molestiae molestias voluptate repellendus doloremque, obcaecati vitae recusandae veniam, officiis placeat.</p>
-                    <input class="botonTienda" type="button" value="Comprar">
+    <!--Sección Tienda-->
+       
+
+            <section class="row productos productosContent">
+                <h1>Nuestra Tienda</h1>
+                <h2>Encuentra lo que estas buscando</h2>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                      
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav filtros">
+                          
+                          <a class="nav-link" href="#">Asistentes</a>
+                          <a class="nav-link" href="#">Iluminación</a>
+                          <a class="nav-link" href="#">Seguridad</a>
+                          <a class="nav-link" href="#">Ambientación</a>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                <div class="col-lg-4 col-md-4 col-sm-12 tarjeta" >
+                    <img src="../image/alexa.png" alt="Alexa">
+                    <h2>Amazon Alexa</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
+                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
                 </div>
-                <div class="articulos">
-                    <h3>Google Nest</h3>
-                    <img src="../image/nest.png" alt="Google Nest">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, debitis. Accusamus illum ex, quod explicabo commodi adipisci impedit tempore molestiae molestias voluptate repellendus doloremque, obcaecati vitae recusandae veniam, officiis placeat.</p>
-                    <input class="botonTienda" type="button" value="Comprar">
+                <div class="col-lg-4 col-md-4 col-sm-12 tarjeta">
+                    <img src="../image/alexa.png" alt="Alexa">
+                    <h2>Amazon Alexa</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
+                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
                 </div>
-                <div class="articulos">
-                    <h3>Alexa</h3>
-                    <img src="../image/alexa.png" alt="Amazon Alexa">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, debitis. Accusamus illum ex, quod explicabo commodi adipisci impedit tempore molestiae molestias voluptate repellendus doloremque, obcaecati vitae recusandae veniam, officiis placeat.</p>
-                    <input class="botonTienda" type="button" value="Comprar">
+                <div class="col-lg-4 col-md-4 col-sm-12 tarjeta">
+                    <img src="../image/alexa.png" alt="Alexa">
+                    <h2>Amazon Alexa</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
+                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
                 </div>
-                <div class="articulos">
-                    <h3>Google Nest</h3>
-                    <img src="../image/nest.png" alt="Google Nest">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, debitis. Accusamus illum ex, quod explicabo commodi adipisci impedit tempore molestiae molestias voluptate repellendus doloremque, obcaecati vitae recusandae veniam, officiis placeat.</p>
-                    <input class="botonTienda" type="button" value="Comprar">
+                <div class="col-lg-4 col-md-4 col-sm-12 tarjeta" >
+                    <img src="../image/nest.png" alt="Nest">
+                    <h2>Google Nest</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
+                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
                 </div>
-                <div class="articulos">
-                    <h3>Alexa</h3>
-                    <img src="../image/alexa.png" alt="Amazon Alexa">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, debitis. Accusamus illum ex, quod explicabo commodi adipisci impedit tempore molestiae molestias voluptate repellendus doloremque, obcaecati vitae recusandae veniam, officiis placeat.</p>
-                    <input class="botonTienda" type="button" value="Comprar">
+                <div class="col-lg-4 col-md-4 col-sm-12 tarjeta">
+                    <img src="../image/nest.png" alt="Nest">
+                    <h2>Google Nest</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
+                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
                 </div>
-                <div class="articulos">
-                    <h3>Google Nest</h3>
-                    <img src="../image/nest.png" alt="Google Nest">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, debitis. Accusamus illum ex, quod explicabo commodi adipisci impedit tempore molestiae molestias voluptate repellendus doloremque, obcaecati vitae recusandae veniam, officiis placeat.</p>
-                    <input class="botonTienda" type="button" value="Comprar">
+                <div class="col-lg-4 col-md-4 col-sm-12 tarjeta">
+                    <img src="../image/nest.png" alt="Nest">
+                    <h2>Google Nest</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
+                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
                 </div>
-                <div class="articulos">
-                    <h3>Alexa</h3>
-                    <img src="../image/alexa.png" alt="Amazon Alexa">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, debitis. Accusamus illum ex, quod explicabo commodi adipisci impedit tempore molestiae molestias voluptate repellendus doloremque, obcaecati vitae recusandae veniam, officiis placeat.</p>
-                    <input class="botonTienda" type="button" value="Comprar">
+                <div class="col-lg-4 col-md-4 col-sm-12 tarjeta" >
+                    <img src="../image/alexa.png" alt="Alexa">
+                    <h2>Amazon Alexa</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
+                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
                 </div>
-                <div class="articulos">
-                    <h3>Google Nest</h3>
-                    <img src="../image/nest.png" alt="Google Nest">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, debitis. Accusamus illum ex, quod explicabo commodi adipisci impedit tempore molestiae molestias voluptate repellendus doloremque, obcaecati vitae recusandae veniam, officiis placeat.</p>
-                    <input class="botonTienda" type="button" value="Comprar">
+                <div class="col-lg-4 col-md-4 col-sm-12 tarjeta">
+                    <img src="../image/alexa.png" alt="Alexa">
+                    <h2>Amazon Alexa</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
+                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
                 </div>
-                
-            </div>
-                
+                <div class="col-lg-4 col-md-4 col-sm-12 tarjeta">
+                    <img src="../image/alexa.png" alt="Alexa">
+                    <h2>Amazon Alexa</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
+                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
+                </div>
+    
+           
             
-        </div>
-        
-    </section>
+              
+            
+        </section>
 
-     <!--Fin sección tienda-->
+        <!--Fin sección tienda-->
 
-     <!--Inicio Footer-->
+        <!--Inicio Footer-->
+        <footer class="row">
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <h4>Dirección</h4>
+                    <ul>
+                        <li>Los Aromos 500</li>
+                        <li>Oliva</li>
+                        <li>Córdoba - Argentina</li>
+                    </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <h4>Legales</h4>
+                    <ul>
+                        <li>
+                            <a href="#">Terminos y condiciones</a>
+                        </li>
+                    </ul>
+                    
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <h4>Contacto</h4>
+                    <ul>
+                        <li>Whatsapp - 9999999</li>
+                        <li>Email - HogarIntel@hi.com.ar</li>
+                        <li>Tel - 88888888</li>
+                    </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <h4>Nuestras Redes Sociales</h4>
+                    <ul>
+                        <li><a href="#"><img src="../image/face.png" alt="Facebbok"></a></li>
+                        <li><a href="#"><img src="../image/twitter.png" alt="twitter"></a></li>
+                        <li><a href="#"><img src="../image/instagram.png" alt="Instagram"></a></li>
+                    </ul>
+            </div>
 
-     <footer>
-        <div>
-            <h4>Dirección</h4>
-                <ul>
-                    <li>Los Aromos 500</li>
-                    <li>Oliva</li>
-                    <li>Córdoba - Argentina</li>
-                </ul>
-        </div>
-        <div>
-            <h4>Legales</h4>
-                <ul>
-                    <li>
-                        <a href="#">Terminos y condiciones</a>
-                    </li>
-                </ul>
-                
-        </div>
-        <div>
-            <h4>Contacto</h4>
-                <ul>
-                    <li>Whatsapp - 9999999</li>
-                    <li>Email - HogarIntel@hi.com.ar</li>
-                    <li>Tel - 88888888</li>
-                </ul>
-        </div>
-        <div>
-            <h4>Nuestras Redes Sociales</h4>
-                <ul>
-                    <li><a href="#"><img src="../image/face.png" alt="Facebbok"></a></li>
-                    <li><a href="#"><img src="../image/twitter.png" alt="twitter"></a></li>
-                    <li><a href="#"><img src="../image/instagram.png" alt="Instagram"></a></li>
-                </ul>
-        </div>
-    </footer>
+
+        </footer>
+    </div> 
+      <!-- Script Bootstrap -->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
     <!--Fin Footer-->
     

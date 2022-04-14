@@ -44,7 +44,7 @@ header{
     top: 0px;
     z-index: 999;
     height: 100%;
-    margin:-6px;
+    margin:-4px;
     
 }
 
@@ -287,10 +287,13 @@ footer img:hover{
 
 /*Pagina de contacto*/
 
-
+.formCentrar{
+    padding: 0px 10%;
+    margin-bottom: 6%;
+}
 
 .contacto{
-    grid-area: section1;
+    
 
     text-align: center;
     margin: 50px 0px;
@@ -298,34 +301,18 @@ footer img:hover{
 
 }
 
-.contacto h2{
-    margin: 8px;
-}
-
-.form{
-    grid-area: section2;
-    display:grid;
-    
-    
-}
 
 
-.entradas{
-    display: flex;
-    flex-direction: column;
-    align-items: space-around;
-    margin: 30px 10px;
-    
-    
-    
-}
+
+
 
 
 
 .entradas input{
     
-    height: 40px;
+    height: 60px;
     margin-left: 10px;
+    border: solid 3px rgba(94,151,172,1);
 }
 
 .entradas label{
@@ -337,30 +324,22 @@ footer img:hover{
 
 .entradas select{
     
-    height: 40px;
+    height: 60px;
     margin-left: 10px;
+    border: solid 3px rgba(94,151,172,1);
 }
 
 .entradas textarea{
-   
+    border: solid 3px rgba(94,151,172,1);
     margin-left: 10px;
    
 }
 
-.btnForm{
-    display: flex;
-    flex-direction: column;
+.btnContacto{
+    background-color: rgba(94,151,172,1);
 }
 
 
-.btnForm input{
-    
-    width: 100%;
-    height: 40px;
-    background-color: rgb(55, 85, 109);
-    
-
-}
 
 
 
@@ -431,11 +410,8 @@ footer img:hover{
 /* Sección Productos y servicios */
 
 .servicios{
-	grid-area: section1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 	
+     text-align: center;
 }
 .servicios h1{
     margin-top: 60px;
@@ -452,44 +428,65 @@ footer img:hover{
 	width: 70%;
 	border: solid 3px rgb(55, 85, 109);
 	margin: 70px 0px;
-}
-
-.contentProductos{
-    grid-area: section2;
-    display:flex;
-    flex-wrap: wrap;
-}
-	
-.productos{
-	width:30%;
-	text-align: center;
-	display: inline-block;
-    margin: 15px;
-    padding-bottom: 50px;
-}
-
-.productos h3{
-    font-size: 1.9rem;
-    padding-bottom: 15px;
-}
-
-
-
-.productos  p{
     
-    margin-top:30px;
 }
 
-.enlaceTienda{
-    text-align: center;
-    font-size: 2rem;
-    color: rgb(55, 85, 109);
-}
+
 
 /*Sección Tienda*/
 
+
+
+.filtros{
+    
+   
+    margin-bottom: 7%;
+    
+}
+
+
+
+
+.filtros a{
+    color: black;
+    font-size: 1.9em;
+    margin: 0px 50px;
+}
+
+.productos{
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.productos img{
+    border-radius: 20px;
+}
+
+.productos h1{
+    margin-bottom: 5%;
+    margin-top: 7%;
+}
+
+.productos h2{
+    margin-bottom: 7%;
+}
+
+.productos p{
+    padding: 0px 12%;
+}
+
+
+
+.tarjeta{
+    border: solid 3px rgba(55,85,109,1);
+    padding:5% 0px 10% 0px;
+    
+}
+
+
+
 #tienda{
-    grid-area: section1;
+   
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -513,62 +510,14 @@ footer img:hover{
 }
 
 
-.filtros{
-    grid-area: filtros;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-right: solid 3px rgb(55, 85, 109);
-    
-}
 
 
 
-.filtros h3{
-    font-size: 2.2rem;
-    margin: 80px 0px;
-
-}
-
-.filtros li{
-    list-style-type: none;
-    margin: 20px 0px;
-}
-
-.filtros a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.9rem;
-    
-}
-
-.botonTienda{
-    margin-top: 20px;
-    width: 150px;
-    height: 30px;
-    background-color: rgb(55, 85, 109);
-    font-family: 'Playfair Display', serif;
-}
-
-.vidriera{
-    grid-area: vidriera;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    flex-wrap: wrap;
-   
-}
 
 
-.articulos{
-    width: 45%;
-    margin-top: 50px;
-}
 
-.articulos h3{
-    font-size: 2rem;
-}
+
+
 
 /*-------------Diseños adaptables Tablet----------------*/
 
@@ -668,7 +617,15 @@ footer img:hover{
          height: 100%;
      }
     
-    
+    /* Sección Contacto */
+
+    .entradas input{
+        height: 35px;
+    }
+
+    .entradas select{
+        height: 35px;
+    }
     
     
     
@@ -791,16 +748,7 @@ footer img:hover{
     }
 
     /*Sección Ventajas*/
-    .ventajasBloque{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        margin-top: 60px;
-        text-align: center;
-        padding-bottom: 50px;
-    }
-
+    
     .ventajasMargen{
         margin: 10px 0px;
     }
@@ -823,42 +771,7 @@ footer img:hover{
         margin-top: 30px;
     }
 
-    /*Tienda*/
-    
-    
-    .contenedorVentas{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .filtros{
-        border-bottom: solid 3px rgb(55, 85, 109);
-        border-right: none;
-    }
-
-    .filtros ul{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .filtros ul li{
-        margin-right: 15px;
-
-    }
-
-    .vidriera{
-        flex-direction: column;
-    }
-
-    .articulos{
-        width: auto;
-    }
-    
-    .articulos p{
-        margin: 0px 6px;
-    }
+   
 
     /*Pagina Nosotros*/
 
@@ -871,11 +784,20 @@ footer img:hover{
     }
 
     /*Pagina Productos y Servicios*/
-    #grillaProductos{
-        
-        
-        grid-template-rows: 150px 1fr 2fr 600px;
-    }    
+    .productos{
+        width: auto;
+    }
+
+      /* Sección Contacto */
+
+    .entradas input{
+        height: 35px;
+    }
+
+    .entradas select{
+        height: 35px;
+    }   
+
 
 }    
 
