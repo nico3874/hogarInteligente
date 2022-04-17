@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>Hogar Inteligente</title>
 </head>
 <body id="grillaTienda">
@@ -67,89 +68,95 @@
     <!--Sección Tienda-->
        
 
-            <section class="row productos productosContent">
+            <section class="row productos">
                 <h1>Nuestra Tienda</h1>
                 <h2>Encuentra lo que estas buscando</h2>
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container-fluid">
-                      
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav filtros">
-                          
-                          <a class="nav-link" href="#">Asistentes</a>
-                          <a class="nav-link" href="#">Iluminación</a>
-                          <a class="nav-link" href="#">Seguridad</a>
-                          <a class="nav-link" href="#">Ambientación</a>
-                          
+                <ul class="nav flex-column col-lg-2 filtros fondoTienda">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Asistentes</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Iluminación</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Seguridad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ambientación</a>
+                    </li>
+                    
+                  </ul>
+                <div class="col-lg-10">  
+                    <div class="d-flex flex-row d-flex flex-wrap justify-content-center">
+                        <div class="col-lg-2 relleno"></div> 
+                        <div class="col-lg-3 col-md-3 col-sm-12 tarjeta" >
+                            <img src="../image/alexa.png" alt="Alexa">
+                            <h2>Amazon Alexa</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
+                            <button type="button" class="btn btn-primary btn-lg animate__animated animate__shakeX">Comprar</button>
                         </div>
-                      </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 tarjeta">
+                            <img src="../image/alexa.png" alt="Alexa">
+                            <h2>Amazon Alexa</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
+                            <button type="button" class="btn btn-primary btn-lg animate__animated animate__shakeX">Comprar</button>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 tarjeta">
+                            <img src="../image/alexa.png" alt="Alexa">
+                            <h2>Amazon Alexa</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
+                            <button type="button" class="btn btn-primary btn-lg animate__animated animate__shakeX">Comprar</button>
+                        </div>
+                    </div>    
+                    <div class="d-flex flex-row d-flex flex-wrap justify-content-center">     
+                        <div class="col-lg-2 relleno"></div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 tarjeta" >
+                            <img src="../image/nest.png" alt="Nest">
+                            <h2>Google Nest</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
+                            <button type="button" class="btn btn-primary btn-lg animate__animated animate__shakeX">Comprar</button>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 tarjeta">
+                            <img src="../image/nest.png" alt="Nest">
+                            <h2>Google Nest</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
+                            <button type="button" class="btn btn-primary btn-lg animate__animated animate__shakeX">Comprar</button>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 tarjeta">
+                            <img src="../image/nest.png" alt="Nest">
+                            <h2>Google Nest</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
+                            <button type="button" class="btn btn-primary btn-lg animate__animated animate__shakeX">Comprar</button>
+                        </div>
                     </div>
-                  </nav>
-                <div class="col-lg-4 col-md-4 col-sm-12 tarjeta" >
-                    <img src="../image/alexa.png" alt="Alexa">
-                    <h2>Amazon Alexa</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
-                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 tarjeta">
-                    <img src="../image/alexa.png" alt="Alexa">
-                    <h2>Amazon Alexa</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
-                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 tarjeta">
-                    <img src="../image/alexa.png" alt="Alexa">
-                    <h2>Amazon Alexa</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
-                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 tarjeta" >
-                    <img src="../image/nest.png" alt="Nest">
-                    <h2>Google Nest</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
-                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 tarjeta">
-                    <img src="../image/nest.png" alt="Nest">
-                    <h2>Google Nest</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
-                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 tarjeta">
-                    <img src="../image/nest.png" alt="Nest">
-                    <h2>Google Nest</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
-                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 tarjeta" >
-                    <img src="../image/alexa.png" alt="Alexa">
-                    <h2>Amazon Alexa</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
-                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 tarjeta">
-                    <img src="../image/alexa.png" alt="Alexa">
-                    <h2>Amazon Alexa</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
-                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 tarjeta">
-                    <img src="../image/alexa.png" alt="Alexa">
-                    <h2>Amazon Alexa</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
-                    <button type="button" class="btn btn-primary btn-lg">Comprar</button>
-                </div>
-    
-           
-            
-              
-            
+                    <div class="d-flex flex-row d-flex flex-wrap justify-content-center">     
+                        <div class="col-lg-2 relleno"></div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 tarjeta" >
+                            <img src="../image/alexa.png" alt="Alexa">
+                            <h2>Amazon Alexa</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
+                            <button type="button" class="btn btn-primary btn-lg animate__animated animate__shakeX">Comprar</button>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 tarjeta">
+                            <img src="../image/alexa.png" alt="Alexa">
+                            <h2>Amazon Alexa</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
+                            <button type="button" class="btn btn-primary btn-lg animate__animated animate__shakeX">Comprar</button>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 tarjeta">
+                            <img src="../image/alexa.png" alt="Alexa">
+                            <h2>Amazon Alexa</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti eos expedita, commodi doloribus facilis repellendus qui voluptatum. Labore, nostrum aperiam.</p>
+                            <button type="button" class="btn btn-primary btn-lg animate__animated animate__shakeX">Comprar</button>
+                        </div>
+                    </div>
+                </div> 
         </section>
 
         <!--Fin sección tienda-->
+
+        <!-- Inicio Seeción Divisor con Imagenes -->
+
 
         <!--Inicio Footer-->
         <footer class="row">
@@ -198,3 +205,5 @@
     
 </body>
 </html>
+
+

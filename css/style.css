@@ -44,7 +44,7 @@ header{
     top: 0px;
     z-index: 999;
     height: 100%;
-    margin:-4px;
+    margin: -3px;
     
 }
 
@@ -73,14 +73,6 @@ nav ul li a{
     margin-left: 50px;
 }
 
-.logo img{
-    width: 40%;
-    animation-iteration-count: infinite;  
-    animation-duration: 7s;
-    border: solid 3px white;
-    border-radius: 20px;  
-
-}
 
 
 .buscador{
@@ -105,9 +97,7 @@ nav ul li a{
     margin: 5px;
 }
 
-.redes li{
-    display: inline-block;
-}
+
 
 .redes img{
     
@@ -161,10 +151,6 @@ nav ul li a{
 /*Sección argumentación*/
 
 .argumento {
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     line-height: 2;
     background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
     height: 100%;
@@ -196,14 +182,11 @@ nav ul li a{
     
 }
 
+
+
 .imagenes{
-    display: flex;
-    flex-direction: column;
     text-align: center;
     margin: 0px 10px;
-    
-    
-    
 }
 
 .imagenes h2{
@@ -234,7 +217,7 @@ nav ul li a{
     padding-top: 60px;
 }
 .ventajasMargen{
-    display: inline-block;
+    
     margin-bottom: 10%;
 }
 
@@ -242,16 +225,11 @@ nav ul li a{
 /* Sección Carrusel */
 
 .carruselContent{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
    
+   background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
+   border: solid 4px white;
 }
-.carruselAncho{
-    width: 60%;
-    height: 70%;
-}
+
 
 
 /*Footer*/
@@ -303,17 +281,22 @@ footer img:hover{
 
 
 
-
-
-
-
-
 .entradas input{
     
     height: 60px;
     margin-left: 10px;
     border: solid 3px rgba(94,151,172,1);
+    transition: all;
 }
+
+.entradas input:focus{
+    border: solid 3px rgba(55,85,109,1);
+}
+
+
+
+
+
 
 .entradas label{
     
@@ -327,12 +310,24 @@ footer img:hover{
     height: 60px;
     margin-left: 10px;
     border: solid 3px rgba(94,151,172,1);
+    transition: all;
 }
+
+.entradas select:focus{
+    border: solid 3px rgba(55,85,109,1);
+}
+
+
 
 .entradas textarea{
     border: solid 3px rgba(94,151,172,1);
     margin-left: 10px;
+    transition: all;
    
+}
+
+.entradas textarea:focus{
+    border: solid 3px rgba(55,85,109,1);
 }
 
 .btnContacto{
@@ -347,8 +342,6 @@ footer img:hover{
 
 .nosotros{
     margin-top: 10%;
-    display: flex;
-    align-items: center;
     text-align: center;
     
 
@@ -368,13 +361,19 @@ footer img:hover{
     margin: 0px 50px;
 }
 
+.nosotrosImagen{
+    background-size: cover;
+}
+
+.pasionImagen{
+    background-size: cover;
+}
+
 
 
 
 .pasion{
     margin: 10% 0px;
-    display: flex;
-    align-items: center;
     text-align: center;
     background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
     padding: 5% 0PX;
@@ -405,6 +404,20 @@ footer img:hover{
 .feed h1{
     margin-bottom: 5%;
 }
+
+.fondoFeed{
+    background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
+    
+}
+
+.marginFeed{
+    padding-top: 2%;
+   
+}
+
+
+
+
 
 
 /* Sección Productos y servicios */
@@ -441,16 +454,24 @@ footer img:hover{
     
    
     margin-bottom: 7%;
-    
-}
+    padding-left: 1%;
 
+}
 
 
 
 .filtros a{
     color: black;
-    font-size: 1.9em;
-    margin: 0px 50px;
+    font-size: 2.3em;
+    
+}
+
+.relleno{
+    background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
+}
+
+.fondoTienda{
+    border-right: solid 5px rgba(94,151,172,1);
 }
 
 .productos{
@@ -473,6 +494,7 @@ footer img:hover{
 
 .productos p{
     padding: 0px 12%;
+    
 }
 
 
@@ -480,42 +502,23 @@ footer img:hover{
 .tarjeta{
     border: solid 3px rgba(55,85,109,1);
     padding:5% 0px 10% 0px;
+    margin:2px;
     
 }
 
-
-
-#tienda{
-   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 90px;
-    padding-bottom: 30px;
-    border-bottom: solid 3px rgb(55, 85, 109);
-
+.tarjeta button{
+    animation-iteration-count: 5;  
+    animation-duration: 2s;
 }
+
+
+
+
 
 .titulos{
     text-align: center;
     margin: 70px 0px;
 }
-
-.contenedorVentas{
-    display:grid;
-    grid-template-columns: 1fr 2fr ;
-    grid-template-rows: auto;
-    grid-template-areas: "filtros vidriera";
-    
-}
-
-
-
-
-
-
-
-
 
 
 
@@ -578,11 +581,7 @@ footer img:hover{
     background-color: rgb(55, 85, 109);
     }
 
-    .redes ul{
-    display: flex;
-    flex-direction: column;
-    
-    }
+   
     /* Sección Presentación del sitio*/
 
     .presentacion{
@@ -610,12 +609,7 @@ footer img:hover{
         margin-bottom: 70px;
     }
 
-    /* Sección Carrusel */
     
-     .carruselAncho{
-         width: 100%;
-         height: 100%;
-     }
     
     /* Sección Contacto */
 
@@ -653,18 +647,10 @@ footer img:hover{
     }
 
     
-    .nosotrosImagen{
-        display: flex;
-        flex-direction: column;
-        border-left: solid 3px rgb(55, 85, 109);
-        width: 100%;
-        margin-top: 10%;
-        
-    }
+    
 
     .pasionImagen{
-        display: flex;
-        flex-direction: column;
+       
         border-right: solid 3px rgb(55, 85, 109);
         width: 100%;
         order:1;
