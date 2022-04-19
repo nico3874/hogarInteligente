@@ -1,0 +1,28 @@
+/*Footer*/
+
+
+footer{
+    background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
+    font-size: 1.7rem;
+    
+    text-align: center;
+    padding: 80px 0px;
+
+    li{
+        margin-top: 10px;
+        list-style-type: none;
+    }
+    a {
+   
+        color: black;
+    }
+    
+    img{
+        transition: height 1s;
+        &:hover{
+            height: 30px;
+        }
+    }
+    
+}
+

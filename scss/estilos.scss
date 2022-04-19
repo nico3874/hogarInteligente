@@ -1,0 +1,704 @@
+/*Import*/
+@import "variables";
+@import "header";
+@import "footer";
+
+
+/*Reset*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Tipo y tamaño de fuentes*/
+
+html{
+    font-size: 62.5%;
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+h1{
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+}
+
+h2{
+    font-size: 2.4rem;
+    font-family: 'Playfair Display', serif;
+}
+
+p{
+    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif;
+}
+
+a{
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+
+/*---Estilos Header---*/
+
+
+
+
+/* Sección Presentación del sitio*/
+
+.presentacion{
+  
+    justify-content: space-around;
+    background-image: url("https://aycrevista.com.ar/wp-content/uploads/2015/11/domotica-02.jpg");
+    align-items: center;
+    background-size:cover;
+    color: white;
+    text-shadow: black 0 -2px ;
+    height: 800px; 
+    text-align: center; 
+}
+
+.presentacionTitulo{
+    border: solid 3px white;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
+    width: 30%;
+    text-align: center;
+    
+}
+
+
+
+.presentacion p{
+    
+    position: relative;
+    bottom: 110px;
+    background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
+    border: solid 3px white;
+    border-radius: 20px;
+    padding:10px 30px;
+    margin-top: 70px;
+    
+   
+   
+}
+
+/*Sección argumentación*/
+
+.argumento {
+    line-height: 2;
+    background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
+    height: 100%;
+    text-align: center;
+
+    h1{
+        margin: 8% 0px 10px 0px;
+        border: solid 3px white;
+        border-radius: 20px;
+        padding: 0px 10px;
+        
+        
+    }
+    p{
+
+        text-align: justify;  
+        padding: 3%; 
+        margin-bottom: 8%; 
+    }
+    
+}
+
+
+
+
+
+/*Sección Imagenes con argumentos*/
+
+.contenImagenes{
+    margin: 100px 0px;
+    text-align: center;
+    
+}
+
+
+
+.imagenes{
+    text-align: center;
+    margin: 0px 10px;
+
+    h2{
+        margin-bottom: 30px;
+    }
+    img{
+        margin-bottom: 30px;
+        border: solid 4px rgb(55, 85, 109);
+    
+    }
+    p{
+        margin: 0px 15px;
+    }
+}
+
+
+
+
+
+
+
+/*Seccion ventajas y alternativas*/
+
+.ventajas{
+    background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
+    text-align: center;
+    h1{
+        align-self: center;
+        margin-bottom: 50px;
+        padding-top: 60px;
+    }
+    
+}
+
+
+.ventajasMargen{
+    
+    margin-bottom: 10%;
+}
+
+
+/* Sección Carrusel */
+
+.carruselContent{
+   
+   background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
+   border: solid 4px white;
+}
+
+
+
+
+
+
+
+
+
+
+/*Pagina de contacto*/
+
+.formCentrar{
+    padding: 0px 10%;
+    margin-bottom: 6%;
+}
+
+.contacto{
+    
+
+    text-align: center;
+    margin: 50px 0px;
+    padding-top: 70px;
+
+}
+
+
+.entradas{
+    input{
+    
+        height: 60px;
+        margin-left: 10px;
+        border: solid 3px rgba(94,151,172,1);
+        transition: all;
+        &:focus{
+            border: solid 3px rgba(55,85,109,1);
+        }
+    }
+    label{
+   
+        font-size: 1.7rem;
+        text-align: left;
+    }
+    select{
+        height: 60px;
+        margin-left: 10px;
+        border: solid 3px rgba(94,151,172,1);
+        transition: all;
+        &:focus{
+            border: solid 3px rgba(55,85,109,1);
+        }
+    }
+    textarea{
+        border: solid 3px rgba(94,151,172,1);
+        margin-left: 10px;
+        transition: all;
+        &:focus{
+            border: solid 3px rgba(55,85,109,1);
+        }
+       
+    }
+    
+}
+
+.btnContacto{
+    background-color: rgba(94,151,172,1);
+}
+
+
+
+/*Pagina Nosotros*/
+
+.nosotros{
+    margin-top: 10%;
+    text-align: center;
+    h1{
+        margin-bottom: 5%;
+    }
+    
+
+}
+
+
+
+.nosotrosTexto{
+    display: flex;
+    flex-direction: column;
+    p{
+        text-align: justify;
+        margin: 0px 50px;
+    }
+}
+
+.nosotrosImagen{
+    background-size: cover;
+}
+
+.pasionImagen{
+    background-size: cover;
+}
+
+
+
+
+.pasion{
+    margin: 10% 0px;
+    text-align: center;
+    background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
+    padding: 5% 0PX;
+    h1{
+        margin-bottom: 5%;
+    }
+}
+
+
+.pasionTexto p{
+    
+    text-align: justify;
+    margin: 0px 50px;
+}
+
+/* Sección FeedBack Clientes */
+
+.feed{
+    text-align: center;
+    margin-bottom: 10%;
+    img{
+        border-radius: 50%;
+    }
+    
+    h1{
+        margin-bottom: 5%;
+    }
+}
+
+
+
+.fondoFeed{
+    background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
+    
+}
+
+.marginFeed{
+    padding-top: 2%;
+   
+}
+
+
+
+
+
+
+/* Sección Productos y servicios */
+
+.servicios{
+	
+     text-align: center;
+    h1{
+        margin-top: 60px;
+    }
+    
+    p{
+        text-align:justify;
+        margin: 60px 0px;
+        padding: 0% 25%;
+    
+    }
+    
+    iframe{
+        width: 70%;
+        border: solid 3px rgb(55, 85, 109);
+        margin: 70px 0px;
+        
+    }
+}
+
+
+
+
+/*Sección Tienda*/
+
+
+
+.filtros{
+    margin-bottom: 7%;
+    padding-left: 1%;
+    a{
+       color: black;
+       font-size: 2.3em;
+    }
+
+}
+
+
+.relleno{
+    background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
+}
+
+.fondoTienda{
+    border-right: solid 5px rgba(94,151,172,1);
+}
+
+.productos{
+    text-align: center;
+    margin-bottom: 10%;
+    img{
+        border-radius: 20px;
+    }
+    
+    h1{
+        margin-bottom: 5%;
+        margin-top: 7%;
+    }
+    
+    h2{
+        margin-bottom: 7%;
+    }
+    
+    p{
+        padding: 0px 12%;
+        
+    }
+}
+
+
+
+
+
+.tarjeta{
+    border: solid 3px rgba(55,85,109,1);
+    padding:5% 0px 10% 0px;
+    margin:2px;
+    button{
+        animation-iteration-count: 5;  
+        animation-duration: 2s;
+    }
+    
+}
+
+
+
+
+
+
+
+.titulos{
+    text-align: center;
+    margin: 70px 0px;
+}
+
+
+
+/*-------------Diseños adaptables Tablet----------------*/
+
+@media screen and (max-width:1200px){
+   
+
+    /*Header*/
+    
+    
+    header{
+        justify-content: space-evenly;
+    }
+
+    .logo{
+        justify-content: right;
+    }
+
+    
+    
+    .logo img{
+        width: 40%;
+        
+
+    }
+
+    .buscador{
+        display: none;
+    }
+
+    .btnBuscador{
+        display: none;
+    }
+
+    .redes{
+        display: none;
+    }
+    
+    nav ul li{
+   
+        list-style-type: none;
+        margin:0px 12px;
+    }    
+    
+
+    nav ul li a{
+        
+        font-size: 1.3rem;
+    }
+
+    
+    .buscador{
+        border-radius: 20px;
+        height: 15px;
+        width: 100px;
+    }
+
+    .btn{
+    background-color: rgb(55, 85, 109);
+    }
+
+   
+    /* Sección Presentación del sitio*/
+
+    .presentacion{
+        justify-content: none;
+        .p{
+            margin: 0px 100px;
+            position: relative;
+            bottom: 110px;
+            
+        }
+    }
+
+    
+    
+    
+
+    /*Sección Imagenes con argumentos*/
+
+    .contenImagenes{
+        flex-direction: column;
+    }
+
+    .imagenes{
+        margin-bottom: 70px;
+    }
+
+    
+    
+    /* Sección Contacto */
+
+    .entradas input{
+        height: 35px;
+    }
+
+    .entradas select{
+        height: 35px;
+    }
+    
+    
+    
+    /*Pagina Nosotros*/
+
+    .nosotros{
+        flex-direction: column;
+    }
+
+    .nosotrosTexto{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+    }
+
+    .pasionTexto{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+    }
+
+    .pasion{
+        flex-direction: column;
+
+    }
+
+    
+    
+
+    .pasionImagen{
+       
+        border-right: solid 3px rgb(55, 85, 109);
+        width: 100%;
+        order:1;
+        margin-top: 10%;
+    }
+
+    
+
+
+
+}
+
+/*------------------Diseño adaptado para Celulares----------------------*/
+
+@media screen and (max-width:768px){
+
+    html{
+        font-size: 45%;
+    }
+
+    
+
+    /*Header*/
+
+    .logo{
+        justify-content: center;
+    }
+
+    nav ul li{
+   
+        list-style-type: none;
+        margin:0px 6px;
+    }    
+    
+
+    .buscador{
+        display: none;
+    }
+
+    .btnBuscador{
+        display: none;
+    }
+
+    .redes{
+        display: none;
+    }
+
+    /*Presentación sitio*/
+    .presentacion{
+        
+        background-repeat: no-repeat;
+        p{
+            margin: 150px 20px;
+            padding-top: 30px;
+        }
+    }
+
+   .presentacionTitulo{
+       width: 70%;
+       margin: 50px 0px;
+    
+   }
+
+   
+
+    
+
+    /*Sección Argumentación*/
+
+    .argumento h1{
+        margin: 5px 0px 10px 0px;
+        text-align: center;
+    }
+    
+    .argumento p{
+       
+        text-align: justify;  
+        padding: 20px;  
+    }
+
+    /*Sección Ventajas*/
+    
+    .ventajasMargen{
+        margin: 10px 0px;
+    }
+
+    /* Sección Carrusel */
+    .carruselAncho{
+        width: 100%;
+        height: 100%;
+    }
+
+    /*Footer*/
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        div{
+            margin-top: 30px;
+        }
+        
+    }
+    
+
+   
+
+    /*Pagina Nosotros*/
+
+    .pasionTexto p{
+        margin: 0px 2px;
+    }
+
+    .nosotrosTexto p{
+        margin: 0px 2px;
+    }
+
+    /*Pagina Productos y Servicios*/
+    .productos{
+        width: auto;
+    }
+
+      /* Sección Contacto */
+
+    .entradas input{
+        height: 35px;
+    }
+
+    .entradas select{
+        height: 35px;
+    }   
+
+
+}    
+
+
+
+
+
+
+
+
+
+
+
+
+
