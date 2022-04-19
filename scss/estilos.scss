@@ -42,7 +42,6 @@ a{
 
 
 
-/*---Estilos Header---*/
 
 
 
@@ -64,7 +63,7 @@ a{
 .presentacionTitulo{
     border: solid 3px white;
     border-radius: 20px;
-    background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
+    background: $colorBase;
     width: 30%;
     text-align: center;
     
@@ -76,7 +75,7 @@ a{
     
     position: relative;
     bottom: 110px;
-    background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
+    background: $colorBase;
     border: solid 3px white;
     border-radius: 20px;
     padding:10px 30px;
@@ -90,7 +89,7 @@ a{
 
 .argumento {
     line-height: 2;
-    background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
+    background: $colorBase;
     height: 100%;
     text-align: center;
 
@@ -151,7 +150,7 @@ a{
 /*Seccion ventajas y alternativas*/
 
 .ventajas{
-    background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
+    background: $colorBase;
     text-align: center;
     h1{
         align-self: center;
@@ -172,7 +171,7 @@ a{
 
 .carruselContent{
    
-   background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
+   background: $colorBase;
    border: solid 4px white;
 }
 
@@ -282,7 +281,7 @@ a{
 .pasion{
     margin: 10% 0px;
     text-align: center;
-    background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
+    background: $colorBase;
     padding: 5% 0PX;
     h1{
         margin-bottom: 5%;
@@ -313,7 +312,7 @@ a{
 
 
 .fondoFeed{
-    background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
+    background: $colorBase;
     
 }
 
@@ -370,7 +369,7 @@ a{
 
 
 .relleno{
-    background: linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
+    background: $colorBase;
 }
 
 .fondoTienda{
@@ -550,8 +549,6 @@ a{
 
     }
 
-    
-    
 
     .pasionImagen{
        
@@ -623,17 +620,20 @@ a{
     
 
     /*Sección Argumentación*/
+    .argumento{
+        h1{
+            margin: 5px 0px 10px 0px;
+            text-align: center;
+        }
+        
+        p{
+            text-align: justify;  
+            padding: 20px;  
+        }
 
-    .argumento h1{
-        margin: 5px 0px 10px 0px;
-        text-align: center;
     }
+
     
-    .argumento p{
-       
-        text-align: justify;  
-        padding: 20px;  
-    }
 
     /*Sección Ventajas*/
     
