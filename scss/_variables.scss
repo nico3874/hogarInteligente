@@ -1,1 +1,29 @@
+
+
 $colorBase:linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1) 31%, rgba(94,151,172,1) 49%, rgba(55,85,109,1) 80%);
+
+/* Utilizando variables para las vistas */
+
+/* Mapa */
+
+$alineacionYfuentes:(centro:center,
+ justificado:justify, 
+ footer:1.7em);
+
+ /* Creando clase para extender en input de contacto */
+
+.styleContactInput{
+    margin-left: 10px;
+    border: solid 3px rgba(94,151,172,1);
+    font-size: 2rem;
+}
+ 
+
+/* Creando un Mixin */ /* Se incorporan en todos los bloques de css que tengan valores en Margin y Padding */
+
+@mixin marPad ($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+    
+}
+

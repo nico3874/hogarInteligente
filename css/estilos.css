@@ -1,11 +1,21 @@
 @charset "UTF-8";
 /*Import*/
+/* Utilizando variables para las vistas */
+/* Mapa */
+/* Creando clase para extender en input de contacto */
+.styleContactInput, .entradas input, .entradas select, .entradas textarea {
+  margin-left: 10px;
+  border: solid 3px #5e97ac;
+  font-size: 2rem; }
+
+/* Creando un Mixin */
+/* Se incorporan en todos los bloques de css que tengan valores en Margin y Padding */
 header {
   background: linear-gradient(to right, #75bdd1 17%, #75bdd1 31%, #5e97ac 49%, #37556d 80%);
   position: sticky;
   top: 0px;
   z-index: 999;
-  height: 100%;
+  height: auto;
   margin: -3px; }
 
 nav ul li {
@@ -40,7 +50,7 @@ nav ul li {
 /*Footer*/
 footer {
   background: linear-gradient(to right, #75bdd1 17%, #75bdd1 31%, #5e97ac 49%, #37556d 80%);
-  font-size: 1.7rem;
+  font-size: 1.7em;
   text-align: center;
   padding: 80px 0px; }
   footer li {
@@ -102,8 +112,8 @@ a {
   background: linear-gradient(to right, #75bdd1 17%, #75bdd1 31%, #5e97ac 49%, #37556d 80%);
   border: solid 3px white;
   border-radius: 20px;
-  padding: 10px 30px;
-  margin-top: 70px; }
+  margin: 70px;
+  padding: 10px 30px; }
 
 /*Sección argumentación*/
 .argumento {
@@ -113,9 +123,9 @@ a {
   text-align: center; }
   .argumento h1 {
     margin: 8% 0px 10px 0px;
+    padding: 0px 10px;
     border: solid 3px white;
-    border-radius: 20px;
-    padding: 0px 10px; }
+    border-radius: 20px; }
   .argumento p {
     text-align: justify;
     padding: 3%;
@@ -166,33 +176,28 @@ a {
 
 .entradas input {
   height: 60px;
-  margin-left: 10px;
-  border: solid 3px #5e97ac;
   transition: all; }
   .entradas input:focus {
     border: solid 3px #37556d; }
 
 .entradas label {
-  font-size: 1.7rem;
+  font-size: 2.2rem;
   text-align: left; }
 
 .entradas select {
   height: 60px;
-  margin-left: 10px;
-  border: solid 3px #5e97ac;
   transition: all; }
   .entradas select:focus {
     border: solid 3px #37556d; }
 
 .entradas textarea {
-  border: solid 3px #5e97ac;
-  margin-left: 10px;
   transition: all; }
   .entradas textarea:focus {
     border: solid 3px #37556d; }
 
 .btnContacto {
-  background-color: #5e97ac; }
+  background-color: #5e97ac;
+  font-size: 1.9rem; }
 
 /*Pagina Nosotros*/
 .nosotros {
@@ -200,6 +205,10 @@ a {
   text-align: center; }
   .nosotros h1 {
     margin-bottom: 5%; }
+  .nosotros h3 {
+    text-align: right;
+    padding-right: 10%;
+    margin-top: 50px; }
 
 .nosotrosTexto {
   display: flex;
@@ -216,9 +225,9 @@ a {
 
 .pasion {
   margin: 10% 0px;
+  padding: 5% 0px;
   text-align: center;
-  background: linear-gradient(to right, #75bdd1 17%, #75bdd1 31%, #5e97ac 49%, #37556d 80%);
-  padding: 5% 0PX; }
+  background: linear-gradient(to right, #75bdd1 17%, #75bdd1 31%, #5e97ac 49%, #37556d 80%); }
   .pasion h1 {
     margin-bottom: 5%; }
 
@@ -284,10 +293,10 @@ a {
 
 .tarjeta {
   border: solid 3px #37556d;
-  padding: 5% 0px 10% 0px;
-  margin: 2px; }
+  margin: 2px;
+  padding: 5% 0px 10% 0px; }
   .tarjeta button {
-    animation-iteration-count: 5;
+    animation-iteration-count: 1;
     animation-duration: 2s; }
 
 .titulos {
@@ -363,9 +372,18 @@ a {
   /*Header*/
   .logo {
     justify-content: center; }
+  .linkLogo {
+    width: auto; }
+  .menuHam {
+    font-size: 25px; }
   nav ul li {
     list-style-type: none;
-    margin: 0px 6px; }
+    margin: 8px 0PX;
+    border: solid 3px white; }
+    nav ul li:hover {
+      border: solid 3px #5e97ac; }
+  nav ul li a {
+    font-size: 3rem; }
   .buscador {
     display: none; }
   .btnBuscador {
@@ -376,8 +394,10 @@ a {
   .presentacion {
     background-repeat: no-repeat; }
     .presentacion p {
-      margin: 150px 20px;
-      padding-top: 30px; }
+      margin: 150px 5px;
+      padding-top: 30px;
+      font-size: 2.2rem;
+      text-align: justify; }
   .presentacionTitulo {
     width: 70%;
     margin: 50px 0px; }
@@ -387,7 +407,8 @@ a {
     text-align: center; }
   .argumento p {
     text-align: justify;
-    padding: 20px; }
+    padding: 10px;
+    font-size: 2.1rem; }
   /*Sección Ventajas*/
   .ventajasMargen {
     margin: 10px 0px; }
@@ -414,4 +435,6 @@ a {
   .entradas input {
     height: 35px; }
   .entradas select {
-    height: 35px; } }
+    height: 35px; }
+  .btnCentrar {
+    margin-top: 20%; } }

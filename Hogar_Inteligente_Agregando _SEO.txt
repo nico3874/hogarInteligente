@@ -1,0 +1,15 @@
+Proyecto Hogar Inteligente
+
+Mejorando el SEO.
+
+
+Se realizaron las siguientes acciones para mejorar el Seo del sitio:
+
+Se eficientizó el tamaño de las imágenes
+Título descriptivo para cada página
+Keywords en todas las páginas 
+Meta description en todas las páginas con diferente contenido
+Correcta estructura de los encabezados.
+Se cambió el texto del Lorem por texto real
+Se controló la adaptabilidad del sitio con la herramienta de Google y en base a la devolución se corrigieron 
+defectos como el tamaño de la fuente, el de los botones y el menú para los dispositivos móviles.

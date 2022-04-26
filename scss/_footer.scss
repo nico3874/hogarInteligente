@@ -3,7 +3,7 @@
 
 footer{
     background: $colorBase;
-    font-size: 1.7rem;
+    font-size: map-get($map: $alineacionYfuentes, $key:footer );
     
     text-align: center;
     padding: 80px 0px;
