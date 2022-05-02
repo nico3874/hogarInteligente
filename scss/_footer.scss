@@ -6,15 +6,18 @@ footer{
     font-size: map-get($map: $alineacionYfuentes, $key:footer );
     
     text-align: center;
-    padding: 80px 0px;
+    padding: 60px 0px;
 
     li{
         margin-top: 10px;
         list-style-type: none;
+        font-size: 1.5;
+        font-family: 'Orbitron', sans-serif;
     }
     a {
-   
+        
         color: black;
+        
     }
     
     img{
@@ -24,5 +27,17 @@ footer{
         }
     }
     
+}
+
+.linea{
+    border-top: solid 3px white;
+    padding-bottom: 3%;
+}
+
+
+.lineaBaja{
+    border-top: solid 3px white;
+    margin-top: 2%;
+
 }
 

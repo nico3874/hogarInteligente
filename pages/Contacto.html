@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=Hogar, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="../css/style.css"> -->
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300;500&family=Orbitron&family=Source+Code+Pro:ital,wght@1,500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <meta name="keywords" content="hogar, inteligente, asistentes, nest, alexa, seguridad, vigilancia, iluminación, ambientación, comodidad, wifi, smarthome">
@@ -20,93 +21,93 @@
      <!--Logo + nav + search -->
     <div class="container-fluid"> 
         <header clas="row">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light d-flex ">
                 <div class="container-fluid">
-                    <a class="navbar-brand linkLogo col-2" href="../index.html">
-                        <div class="logo">
-                            <img src="../image/logo2.png" alt="Logo">
+                    <a class="navbar-brand  linkLogo " href="index.html">
+                        <div class="d-flex flex-column align-items-center justify-content-center">  
+                            <img src="../image/logoalt.png" alt="Logo">
+                            <h2 class="logoFont">Hogar Inteligente</h2>
                         </div>  
                     </a>
                     <button class="navbar-toggler menuHam" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse col-6" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse navPad" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                            <a class="nav-link" href="../pages/Nosotros.html">Nosotros</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="Productos.html">Productos y Servicios</a>
+                            <a class="nav-link" href="../pages/Productos.html">Productos y Servicios</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="Contacto.html">Contactos</a>
+                            <a class="nav-link" href="../pages/Contacto.html">Contactos</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="Tienda.html">Tienda</a>
+                            <a class="nav-link" href="../pages/Tienda.html">Tienda</a>
                             </li>
                         </ul>
-                        <form class="d-flex separarIconos col-2">
+                        <form class="d-flex separarIconos">
                             <input class="buscador" type="search">
                             <button class="btnBuscador" type="submit"><img src="../image/lupa.png" alt="lupa"></button>
                         </form>
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-2">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
                             <li  class="nav-item redes"><a href="#"><img src="../image/face.png" alt="Facebbok"></a></li>
                             <li  class="nav-item redes"><a href="#"><img src="../image/twitter.png" alt="twitter"></a></li>
                             <li  class="nav-item redes"><a href="#"><img src="../image/instagram.png" alt="Instagram"></a></li>
                         </ul>
                         
                     </div>
-                    <div class="redes">
-                        
-                    </div>
+                    
                 </div>
             </nav>
                 
         </header>
             <!--Fin de Logo + nav + search-->
+        <div class="fondo">
+            <section class=" row contacto">
+                <h1>CONTACTO</h1>
+                <h2>Solicita tu presupuesto</h2>
+            </section>
 
-        <section class=" row contacto">
-            <h1>CONTACTO</h1>
-            <h2>Solicita tu presupuesto</h2>
-        </section>
-
-        <!--formulario de contacto--> <!--Se utiliza <br> hasta que se incorpore el CSS-->
-        <section class="row formCentrar">
-            <div class="mb-3 entradas">
-                <label for="Nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingreso tu Nombre y Apellido">
-              </div>
-              <div class="mb-3 entradas">
-                <label for="Email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu email">
-              </div>
-              <div class="mb-3 entradas">
-                <label for="Telefono" class="form-label">Telefono</label>
-                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu teléfono">
-              </div>
-              <div class="mb-3 entradas">
-                <label for="Sexo" class="form-label">Sexo</label> 
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Presiona para ver las opciones</option>
-                    <option value="1">Masculino</option>
-                    <option value="2">Femenino</option>
-                    <option value="3">Prefiero no decir</option>
-                </select>
-              </div>  
-              <div class="mb-3 entradas">
-                <label for="Comentarios" class="form-label">Ingresa un comentario</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
-              </div>
-              <div class="d-grid gap-2 ">
-                <div class="d-grid gap-2 col-6 mx-auto w-100">
-                    <button class="btn btnContacto btnCentrar" type="button">Enviar Formulario</button>
-                    <button class="btn btnContacto btnCentrar" type="button">Limpiar Formulario</button>
-                  </div>
-              </div>
-        </section>
+            <!--formulario de contacto--> <!--Se utiliza <br> hasta que se incorpore el CSS-->
+            <section class="row formCentrar">
+                <div class="mb-3 entradas">
+                    <label for="Nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingreso tu Nombre y Apellido">
+                </div>
+                <div class="mb-3 entradas">
+                    <label for="Email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu email">
+                </div>
+                <div class="mb-3 entradas">
+                    <label for="Telefono" class="form-label">Telefono</label>
+                    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu teléfono">
+                </div>
+                <div class="mb-3 entradas">
+                    <label for="Sexo" class="form-label">Sexo</label> 
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Presiona para ver las opciones</option>
+                        <option value="1">Masculino</option>
+                        <option value="2">Femenino</option>
+                        <option value="3">Prefiero no decir</option>
+                    </select>
+                </div>  
+                <div class="mb-3 entradas">
+                    <label for="Comentarios" class="form-label">Ingresa un comentario</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                </div>
+                <div class="d-grid gap-2 ">
+                    <div class="d-grid gap-2 col-6 mx-auto w-100">
+                        <button class="btn btnContacto btnCentrar" type="button">Enviar Formulario</button>
+                        <button class="btn btnContacto btnCentrar margenBtnFooter" type="button">Limpiar Formulario</button>
+                    </div>
+                </div>
+            </section>
+        </div>    
 
         
 
@@ -114,6 +115,7 @@
     
         
         <footer class="row">
+            <div class="linea"></div>
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <h4>Dirección</h4>
                     <ul>
@@ -122,7 +124,7 @@
                         <li>Córdoba - Argentina</li>
                     </ul>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-12">
+            <div class="col-lg-3 col-md-3 col-sm-12 footerMargin">
                 <h4>Legales</h4>
                     <ul>
                         <li>
@@ -131,7 +133,7 @@
                     </ul>
                     
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-12">
+            <div class="col-lg-3 col-md-3 col-sm-12 footerMargin">
                 <h4>Contacto</h4>
                     <ul>
                         <li>Whatsapp - 9999999</li>
@@ -139,7 +141,7 @@
                         <li>Tel - 88888888</li>
                     </ul>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-12">
+            <div class="col-lg-3 col-md-3 col-sm-12 footerMargin">
                 <h4>Nuestras Redes Sociales</h4>
                     <ul>
                         <li><a href="#"><img src="../image/face.png" alt="Facebbok"></a></li>
@@ -147,8 +149,7 @@
                         <li><a href="#"><img src="../image/instagram.png" alt="Instagram"></a></li>
                     </ul>
             </div>
-
-
+            <div class="lineaBaja"></div>
         </footer>
     <!--Fin del Footer-->
     

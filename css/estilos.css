@@ -8,6 +8,31 @@
   border: solid 3px #5e97ac;
   font-size: 2rem; }
 
+.bannerOpacity, .bannerOfertas::before, .bannerOfertas2::before, .bannerOfertas3::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+.banner, .bannerOfertas, .bannerOfertas2, .bannerOfertas3 {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  position: relative; }
+  .banner h1, .bannerOfertas h1, .bannerOfertas2 h1, .bannerOfertas3 h1 {
+    position: relative; }
+  .banner ul, .bannerOfertas ul, .bannerOfertas2 ul, .bannerOfertas3 ul {
+    margin-top: 15px; }
+  .banner li, .bannerOfertas li, .bannerOfertas2 li, .bannerOfertas3 li {
+    font-size: 2rem;
+    font-family: 'Orbitron', sans-serif;
+    list-style-type: none;
+    position: relative; }
+  .banner a, .bannerOfertas a, .bannerOfertas2 a, .bannerOfertas3 a {
+    text-decoration: none;
+    color: black; }
+
 /* Creando un Mixin */
 /* Se incorporan en todos los bloques de css que tengan valores en Margin y Padding */
 header {
@@ -16,7 +41,13 @@ header {
   top: 0px;
   z-index: 999;
   height: auto;
-  margin: -3px; }
+  margin: -4px; }
+
+.navPad {
+  text-align: right; }
+
+nav ul {
+  margin-left: 40px; }
 
 nav ul li {
   list-style-type: none;
@@ -24,15 +55,21 @@ nav ul li {
   nav ul li a {
     text-decoration: none;
     color: black;
-    font-size: 2.1rem; }
+    font-size: 1.9rem; }
 
 .linkLogo {
-  margin-left: 50px; }
+  padding-left: 50px; }
+
+.logoFont {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  padding: 50px, 0px; }
 
 .buscador {
   border-radius: 20px;
   height: 30px;
-  width: 200px; }
+  width: 100%;
+  font-size: 2rem; }
 
 .btnBuscador {
   background-color: #37556d; }
@@ -50,18 +87,28 @@ nav ul li {
 /*Footer*/
 footer {
   background: linear-gradient(to right, #75bdd1 17%, #75bdd1 31%, #5e97ac 49%, #37556d 80%);
-  font-size: 1.7em;
+  font-size: 1.5em;
   text-align: center;
-  padding: 80px 0px; }
+  padding: 60px 0px; }
   footer li {
     margin-top: 10px;
-    list-style-type: none; }
+    list-style-type: none;
+    font-size: 1.5;
+    font-family: 'Orbitron', sans-serif; }
   footer a {
     color: black; }
   footer img {
     transition: height 1s; }
     footer img:hover {
       height: 30px; }
+
+.linea {
+  border-top: solid 3px white;
+  padding-bottom: 3%; }
+
+.lineaBaja {
+  border-top: solid 3px white;
+  margin-top: 2%; }
 
 /*Reset*/
 * {
@@ -70,48 +117,52 @@ footer {
 
 /*Tipo y tamaño de fuentes*/
 html {
-  font-size: 62.5%;
-  font-family: 'Playfair Display', serif; }
+  font-size: 62.5%; }
 
 h1 {
   font-size: 3rem;
-  font-family: 'Playfair Display', serif; }
+  font-family: 'Orbitron', sans-serif; }
 
 h2 {
-  font-size: 2.4rem;
-  font-family: 'Playfair Display', serif; }
+  font-size: 2.7rem;
+  font-family: 'Orbitron', sans-serif; }
+
+h4 {
+  font-size: 2rem;
+  font-family: 'Orbitron', sans-serif; }
 
 p {
-  font-size: 1.8rem;
-  font-family: 'Playfair Display', serif; }
+  font-size: 2.1rem;
+  font-family: 'Orbitron', sans-serif; }
 
 a {
-  font-family: 'Playfair Display', serif; }
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem; }
 
 /* Sección Presentación del sitio*/
 .presentacion {
   justify-content: space-around;
-  background-image: url("https://aycrevista.com.ar/wp-content/uploads/2015/11/domotica-02.jpg");
+  background-image: url(https://www.echeverrimontes.com/hubfs/Ventajas%20y%20desventajas%20de%20la%20dom%C3%B3tica.png);
+  /* background-image: url(https://alullan.es/wp-content/uploads/2019/11/domotica-en-el-hogar-beneficios-y-ventajas-1080x675.jpg); */
+  /* background-image: url(https://www.echeverrimontes.com/hubfs/Ventajas%20y%20desventajas%20de%20la%20dom%C3%B3tica.png); */
   align-items: center;
   background-size: cover;
-  color: white;
-  text-shadow: black 0 -2px;
+  /* color: white; */
+  /* text-shadow: black 0 -2px ; */
   height: 800px;
   text-align: center; }
 
 .presentacionTitulo {
-  border: solid 3px white;
-  border-radius: 20px;
-  background: linear-gradient(to right, #75bdd1 17%, #75bdd1 31%, #5e97ac 49%, #37556d 80%);
+  /*  border: solid 3px white;
+    border-radius: 20px;
+    background: $colorBase; */
   width: 30%;
   text-align: center; }
 
 .presentacion p {
   position: relative;
   bottom: 110px;
-  background: linear-gradient(to right, #75bdd1 17%, #75bdd1 31%, #5e97ac 49%, #37556d 80%);
-  border: solid 3px white;
-  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
   margin: 70px;
   padding: 10px 30px; }
 
@@ -122,10 +173,9 @@ a {
   height: 100%;
   text-align: center; }
   .argumento h1 {
-    margin: 8% 0px 10px 0px;
-    padding: 0px 10px;
-    border: solid 3px white;
-    border-radius: 20px; }
+    margin: 10% 0px 10px 0px;
+    padding: 0px 30px;
+    background-color: rgba(255, 255, 255, 0.5); }
   .argumento p {
     text-align: justify;
     padding: 3%;
@@ -135,43 +185,69 @@ a {
 .contenImagenes {
   margin: 100px 0px;
   text-align: center; }
-
-.imagenes {
-  text-align: center;
-  margin: 0px 10px; }
-  .imagenes h2 {
-    margin-bottom: 30px; }
-  .imagenes img {
-    margin-bottom: 30px;
-    border: solid 4px #37556d; }
-  .imagenes p {
-    margin: 0px 15px; }
+  .contenImagenes .imagenIn {
+    animation-iteration-count: 4;
+    animation-duration: 4s; }
+  .contenImagenes .imagenes {
+    text-align: center;
+    margin: 0px 10px; }
+    .contenImagenes .imagenes h2 {
+      margin-bottom: 30px; }
+    .contenImagenes .imagenes img {
+      margin-bottom: 30px;
+      border: solid 4px #37556d; }
+    .contenImagenes .imagenes p {
+      margin: 0px 15px; }
 
 /*Seccion ventajas y alternativas*/
 .ventajas {
-  background: linear-gradient(to right, #75bdd1 17%, #75bdd1 31%, #5e97ac 49%, #37556d 80%);
+  background-color: white;
   text-align: center; }
   .ventajas h1 {
     align-self: center;
     margin-bottom: 50px;
     padding-top: 60px; }
+  .ventajas ul li {
+    margin: 60px;
+    list-style-type: none;
+    transform: scale(0.5); }
+
+.itemsAlign {
+  padding: 0px 10%;
+  background: linear-gradient(to right, #75bdd1 17%, #75bdd1 31%, #5e97ac 49%, #37556d 80%); }
 
 .ventajasMargen {
-  margin-bottom: 10%; }
+  margin-bottom: 1%;
+  transform: scale(0.3); }
+  .ventajasMargen p {
+    font-size: 4.5rem;
+    text-align: center; }
 
 /* Sección Carrusel */
 .carruselContent {
-  background: linear-gradient(to right, #75bdd1 17%, #75bdd1 31%, #5e97ac 49%, #37556d 80%);
-  border: solid 4px white; }
+  background: linear-gradient(to right, #75bdd1 17%, #75bdd1 31%, #5e97ac 49%, #37556d 80%); }
 
 /*Pagina de contacto*/
+.fondo {
+  background-image: url(https://alullan.es/wp-content/uploads/2019/11/domotica-en-el-hogar-beneficios-y-ventajas-1080x675.jpg);
+  background-size: cover;
+  position: relative;
+  z-index: 1; }
+
+.fondo::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
 .formCentrar {
   padding: 0px 10%;
-  margin-bottom: 6%; }
+  margin-bottom: 1%; }
 
 .contacto {
   text-align: center;
-  margin: 50px 0px;
   padding-top: 70px; }
 
 .entradas input {
@@ -198,6 +274,9 @@ a {
 .btnContacto {
   background-color: #5e97ac;
   font-size: 1.9rem; }
+
+.margenBtnFooter {
+  margin-bottom: 20px; }
 
 /*Pagina Nosotros*/
 .nosotros {
@@ -260,9 +339,22 @@ a {
     margin: 60px 0px;
     padding: 0% 25%; }
   .servicios iframe {
-    width: 70%;
+    width: 50%;
     border: solid 3px #37556d;
     margin: 70px 0px; }
+
+.bannerOfertas {
+  background-image: url(https://www.oirealtor.com/noticias-inmobiliarias/wp-content/uploads/2020/12/domotica4.png); }
+
+.bannerOfertas2 {
+  background-image: url(https://blogs.udima.es/ingenieria-industrial/wp-content/uploads/2020/05/domotica1-800x350.png); }
+
+.bannerOfertas3 {
+  background-image: url(https://www.beedigital.es/wp-content/uploads/2020/09/a74d1cfeef58d7f69c7210090984f6a3862769902-1.jpg); }
+
+.veleta {
+  animation-iteration-count: 4;
+  animation-duration: 4s; }
 
 /*Sección Tienda*/
 .filtros {
@@ -306,18 +398,23 @@ a {
 /*-------------Diseños adaptables Tablet----------------*/
 @media screen and (max-width: 1200px) {
   /*Header*/
+  /* header{
+        justify-content: space-evenly;
+    } */
   header {
-    justify-content: space-evenly; }
-  .logo {
-    justify-content: right; }
-  .logo img {
-    width: 40%; }
+    display: flex;
+    justify-content: center; }
+  .linkLogo {
+    transform: scale(0.8);
+    justify-content: center; }
   .buscador {
     display: none; }
   .btnBuscador {
     display: none; }
   .redes {
     display: none; }
+  nav ul {
+    margin-left: 0px; }
   nav ul li {
     list-style-type: none;
     margin: 0px 12px; }
@@ -363,7 +460,10 @@ a {
     border-right: solid 3px #37556d;
     width: 100%;
     order: 1;
-    margin-top: 10%; } }
+    margin-top: 10%; }
+  /* Sección Productos y servicios */
+  .servicios iframe {
+    width: 80%; } }
 
 /*------------------Diseño adaptado para Celulares----------------------*/
 @media screen and (max-width: 768px) {
@@ -372,11 +472,15 @@ a {
   /*Header*/
   .logo {
     justify-content: center; }
+  .logoFont {
+    font-size: 1.9rem; }
   .linkLogo {
-    width: auto; }
+    width: auto;
+    transform: scale(0.6); }
   .menuHam {
     font-size: 25px; }
   nav ul li {
+    text-align: left;
     list-style-type: none;
     margin: 8px 0PX;
     border: solid 3px white; }
@@ -403,7 +507,7 @@ a {
     margin: 50px 0px; }
   /*Sección Argumentación*/
   .argumento h1 {
-    margin: 5px 0px 10px 0px;
+    margin: 10px 0px 10px 0px;
     text-align: center; }
   .argumento p {
     text-align: justify;
@@ -423,6 +527,8 @@ a {
     justify-content: start; }
     footer div {
       margin-top: 30px; }
+  .footerMargin {
+    margin-top: 25px; }
   /*Pagina Nosotros*/
   .pasionTexto p {
     margin: 0px 2px; }
@@ -431,6 +537,8 @@ a {
   /*Pagina Productos y Servicios*/
   .productos {
     width: auto; }
+  .servicios iframe {
+    width: 100%; }
   /* Sección Contacto */
   .entradas input {
     height: 35px; }

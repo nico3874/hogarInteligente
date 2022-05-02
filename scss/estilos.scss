@@ -15,28 +15,34 @@
 
 html{
     font-size: 62.5%;
-    font-family: 'Playfair Display', serif;
 }
 
 
 h1{
     font-size: 3rem;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Orbitron', sans-serif;
 }
 
 h2{
-    font-size: 2.4rem;
-    font-family: 'Playfair Display', serif;
+    font-size: 2.7rem;
+    font-family: 'Orbitron', sans-serif;
+}
+
+h4{
+    font-size: 2rem;
+    font-family: 'Orbitron', sans-serif; 
 }
 
 p{
-    font-size: 1.8rem;
-    font-family: 'Playfair Display', serif;
+    font-size: 2.1rem;
+    font-family: 'Orbitron', sans-serif;
 }
 
 a{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
 }
+
 
 
 
@@ -50,19 +56,21 @@ a{
 .presentacion{
   
     justify-content: space-around;
-    background-image: url("https://aycrevista.com.ar/wp-content/uploads/2015/11/domotica-02.jpg");
+    background-image: url(https://www.echeverrimontes.com/hubfs/Ventajas%20y%20desventajas%20de%20la%20dom%C3%B3tica.png);
+    /* background-image: url(https://alullan.es/wp-content/uploads/2019/11/domotica-en-el-hogar-beneficios-y-ventajas-1080x675.jpg); */
+    /* background-image: url(https://www.echeverrimontes.com/hubfs/Ventajas%20y%20desventajas%20de%20la%20dom%C3%B3tica.png); */
     align-items: center;
     background-size:cover;
-    color: white;
-    text-shadow: black 0 -2px ;
+    /* color: white; */
+    /* text-shadow: black 0 -2px ; */
     height: 800px; 
     text-align: map-get($map: $alineacionYfuentes, $key:centro ); 
 }
 
 .presentacionTitulo{
-    border: solid 3px white;
+   /*  border: solid 3px white;
     border-radius: 20px;
-    background: $colorBase;
+    background: $colorBase; */
     width: 30%;
     text-align: map-get($map: $alineacionYfuentes, $key:centro );
     
@@ -74,10 +82,9 @@ a{
     
     position: relative;
     bottom: 110px;
-    background: $colorBase;
-    border: solid 3px white;
-    border-radius: 20px;
+    background-color: rgba($color: #ffff, $alpha: 0.5);
     @include marPad(70px, 10px 30px);
+    
    
    
 }
@@ -91,9 +98,10 @@ a{
     text-align: map-get($map: $alineacionYfuentes, $key:centro );
 
     h1{ 
-        @include marPad (8% 0px 10px 0px, 0px 10px );
-        border: solid 3px white;
-        border-radius: 20px;
+        @include marPad (10% 0px 10px 0px, 0px 30px );
+        
+       
+        background-color: rgba($color: #ffff, $alpha: 0.5);
 
     }
     p{
@@ -115,8 +123,10 @@ a{
     margin: 100px 0px;
     text-align: map-get($map: $alineacionYfuentes, $key:centro );
     
+.imagenIn{
+    animation-iteration-count: 4;  
+    animation-duration: 4s;
 }
-
 
 
 .imagenes{
@@ -125,6 +135,7 @@ a{
 
     h2{
         margin-bottom: 30px;
+        
     }
     img{
         margin-bottom: 30px;
@@ -133,6 +144,8 @@ a{
     }
     p{
         margin: 0px 15px;
+        
+}
     }
 }
 
@@ -145,21 +158,46 @@ a{
 /*Seccion ventajas y alternativas*/
 
 .ventajas{
-    background: $colorBase;
+    background-color:white ;
     text-align: map-get($map: $alineacionYfuentes, $key:centro );
+    
     h1{
         align-self: center;
         margin-bottom: 50px;
         padding-top: 60px;
     }
     
+
+    ul li{
+        margin: 60px;
+        list-style-type: none;
+        transform: scale(0.5);
+    }
+    
+    
 }
+
+.itemsAlign{
+    padding: 0px 10%;
+    
+    background: $colorBase;
+    
+}
+
+
+
 
 
 .ventajasMargen{
     
-    margin-bottom: 10%;
+    margin-bottom: 1%;
+    transform: scale(0.3);
+    p{
+        font-size: 4.5rem;
+        text-align: map-get($map: $alineacionYfuentes, $key:centro )
+    }
 }
+
 
 
 /* Sección Carrusel */
@@ -167,30 +205,41 @@ a{
 .carruselContent{
    
    background: $colorBase;
-   border: solid 4px white;
+   
 }
-
-
-
-
-
-
-
 
 
 
 /*Pagina de contacto*/
+.fondo{
+    background-image: url(https://alullan.es/wp-content/uploads/2019/11/domotica-en-el-hogar-beneficios-y-ventajas-1080x675.jpg);
+    background-size: cover;
+    position:relative;
+    z-index: 1;
+    
+    
+}
+
+.fondo::before{
+    content: "";
+    background-color: rgba($color: #ffff, $alpha: 0.6);
+    z-index: -1;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    
+}
 
 .formCentrar{
     padding: 0px 10%;
-    margin-bottom: 6%;
+    margin-bottom: 1%;
 }
 
 .contacto{
     
-
+    
     text-align: map-get($map: $alineacionYfuentes, $key:centro );
-    margin: 50px 0px;
+    
     padding-top: 70px;
 
 }
@@ -233,6 +282,11 @@ a{
 .btnContacto{
     background-color: rgba(94,151,172,1);
     font-size: 1.9rem;
+   
+}
+
+.margenBtnFooter{
+    margin-bottom: 20px;
 }
 
 
@@ -339,12 +393,50 @@ a{
     }
     
     iframe{
-        width: 70%;
+        width: 50%;
         border: solid 3px rgb(55, 85, 109);
         margin: 70px 0px;
         
     }
 }
+
+
+
+
+
+.bannerOfertas{
+    @extend .banner;
+    background-image: url(https://www.oirealtor.com/noticias-inmobiliarias/wp-content/uploads/2020/12/domotica4.png);
+    
+    &::before{
+       @extend .bannerOpacity;
+    }
+}
+
+.bannerOfertas2{
+    @extend .banner;
+    background-image: url(https://blogs.udima.es/ingenieria-industrial/wp-content/uploads/2020/05/domotica1-800x350.png);
+    
+    &::before{
+       @extend .bannerOpacity;
+    }
+}
+
+.bannerOfertas3{
+    @extend .banner;
+    background-image: url(https://www.beedigital.es/wp-content/uploads/2020/09/a74d1cfeef58d7f69c7210090984f6a3862769902-1.jpg);
+    
+    &::before{
+       @extend .bannerOpacity;
+    }
+}
+
+.veleta{
+    animation-iteration-count: 4;  
+    animation-duration: 4s;
+}
+
+
 
 
 
@@ -429,19 +521,18 @@ a{
     /*Header*/
     
     
-    header{
+    /* header{
         justify-content: space-evenly;
+    } */
+
+    header{
+        display: flex;
+        justify-content: center;
     }
 
-    .logo{
-        justify-content: right;
-    }
-
-    
-    
-    .logo img{
-        width: 40%;
-        
+    .linkLogo{
+        transform: scale(0.8);
+        justify-content: center;
 
     }
 
@@ -455,6 +546,10 @@ a{
 
     .redes{
         display: none;
+    }
+
+    nav ul{
+        margin-left: 0px;
     }
     
     nav ul li{
@@ -553,6 +648,14 @@ a{
         margin-top: 10%;
     }
 
+    /* Sección Productos y servicios */
+    .servicios{
+        iframe{
+            width: 80%;
+        }
+    }
+    
+
     
 
 
@@ -576,8 +679,13 @@ a{
         justify-content: center;
     }
 
+    .logoFont{
+        font-size: 1.9rem;
+    }
+
     .linkLogo{
         width: auto;
+        transform: scale(0.6);
     }
 
     .menuHam{
@@ -585,6 +693,7 @@ a{
     }
 
     nav ul li{
+        text-align: left;
         list-style-type: none;
         margin: 8px 0PX;
         border: solid 3px white;
@@ -638,7 +747,7 @@ a{
     /*Sección Argumentación*/
     .argumento{
         h1{
-            margin: 5px 0px 10px 0px;
+            margin: 10px 0px 10px 0px;
             text-align: map-get($map: $alineacionYfuentes, $key:centro );
         }
         
@@ -659,6 +768,7 @@ a{
         margin: 10px 0px;
     }
 
+    
     /* Sección Carrusel */
     .carruselAncho{
         width: 100%;
@@ -675,6 +785,10 @@ a{
             margin-top: 30px;
         }
         
+    }
+
+    .footerMargin{
+        margin-top: 25px;
     }
     
 
@@ -694,6 +808,14 @@ a{
     .productos{
         width: auto;
     }
+
+    .servicios{
+        iframe{
+            width: 100%;
+        }
+    }
+
+    
 
       /* Sección Contacto */
 

@@ -8,7 +8,7 @@ $colorBase:linear-gradient(to right, rgba(117,189,209,1) 17%, rgba(117,189,209,1
 
 $alineacionYfuentes:(centro:center,
  justificado:justify, 
- footer:1.7em);
+ footer:1.5em);
 
  /* Creando clase para extender en input de contacto */
 
@@ -16,6 +16,42 @@ $alineacionYfuentes:(centro:center,
     margin-left: 10px;
     border: solid 3px rgba(94,151,172,1);
     font-size: 2rem;
+}
+
+.bannerOpacity{
+    content: "";
+    background-color: rgba($color: #ffff, $alpha: 0.5);
+    position:absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.banner{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    position: relative;
+    h1{
+        position: relative;
+    }
+    ul{
+        margin-top: 15px;
+        
+    }
+
+    li{
+        font-size: 2rem;
+        font-family: 'Orbitron', sans-serif;
+        list-style-type: none;
+        position: relative;
+        
+        
+    }
+    a{
+        text-decoration: none;
+        color: black;
+
+    }
 }
  
 
