@@ -11,6 +11,8 @@
     padding: 0px;
 }
 
+
+
 /*Tipo y tamaño de fuentes*/
 
 html{
@@ -46,31 +48,19 @@ a{
 
 
 
-
-
-
-
-
 /* Sección Presentación del sitio*/
 
 .presentacion{
   
     justify-content: space-around;
     background-image: url(https://www.echeverrimontes.com/hubfs/Ventajas%20y%20desventajas%20de%20la%20dom%C3%B3tica.png);
-    /* background-image: url(https://alullan.es/wp-content/uploads/2019/11/domotica-en-el-hogar-beneficios-y-ventajas-1080x675.jpg); */
-    /* background-image: url(https://www.echeverrimontes.com/hubfs/Ventajas%20y%20desventajas%20de%20la%20dom%C3%B3tica.png); */
     align-items: center;
     background-size:cover;
-    /* color: white; */
-    /* text-shadow: black 0 -2px ; */
     height: 800px; 
     text-align: map-get($map: $alineacionYfuentes, $key:centro ); 
 }
 
 .presentacionTitulo{
-   /*  border: solid 3px white;
-    border-radius: 20px;
-    background: $colorBase; */
     width: 30%;
     text-align: map-get($map: $alineacionYfuentes, $key:centro );
     
@@ -94,14 +84,11 @@ a{
 .argumento {
     line-height: 2;
     background: $colorBase;
-    height: 100%;
     text-align: map-get($map: $alineacionYfuentes, $key:centro );
 
     h1{ 
         @include marPad (10% 0px 10px 0px, 0px 30px );
         
-       
-        background-color: rgba($color: #ffff, $alpha: 0.5);
 
     }
     p{
@@ -122,11 +109,7 @@ a{
 .contenImagenes{
     margin: 100px 0px;
     text-align: map-get($map: $alineacionYfuentes, $key:centro );
-    
-.imagenIn{
-    animation-iteration-count: 4;  
-    animation-duration: 4s;
-}
+
 
 
 .imagenes{
@@ -151,10 +134,6 @@ a{
 
 
 
-
-
-
-
 /*Seccion ventajas y alternativas*/
 
 .ventajas{
@@ -167,33 +146,25 @@ a{
         padding-top: 60px;
     }
     
-
-    ul li{
-        margin: 60px;
-        list-style-type: none;
-        transform: scale(0.5);
-    }
     
     
 }
 
 .itemsAlign{
-    padding: 0px 10%;
-    
-    background: $colorBase;
+    margin: 5% 0% 10% 0%;
+    border-top: solid 3px black;
+    border-bottom: solid 3px black;
     
 }
 
 
 
-
-
 .ventajasMargen{
     
-    margin-bottom: 1%;
-    transform: scale(0.3);
+    margin: 4% 0% 4% 0%;
+    
     p{
-        font-size: 4.5rem;
+        
         text-align: map-get($map: $alineacionYfuentes, $key:centro )
     }
 }
@@ -216,19 +187,20 @@ a{
     background-size: cover;
     position:relative;
     z-index: 1;
+    &::before{
+        content: "";
+        background-color: rgba($color: #ffff, $alpha: 0.6);
+        z-index: -1;
+        position:absolute;
+        width: 100%;
+        height: 100%;
+
+    }
     
     
 }
 
-.fondo::before{
-    content: "";
-    background-color: rgba($color: #ffff, $alpha: 0.6);
-    z-index: -1;
-    position:absolute;
-    width: 100%;
-    height: 100%;
-    
-}
+
 
 .formCentrar{
     padding: 0px 10%;
@@ -248,7 +220,6 @@ a{
 .entradas{
     input{
         @extend .styleContactInput;
-        
         height: 60px;
         transition: all;
         &:focus{
@@ -294,15 +265,18 @@ a{
 /*Pagina Nosotros*/
 
 .nosotros{
-    margin-top: 10%;
+    margin-top: 4%;
     text-align: map-get($map: $alineacionYfuentes, $key:centro );
-    h1{
-        margin-bottom: 5%;
+    h1,h2{
+        margin-bottom: 4%;
     }
     h3{
         text-align: right;
         padding-right: 10%;
         margin-top: 50px;
+    }
+    p{
+        font-size: 1.6rem;
     }
     
 
@@ -311,21 +285,18 @@ a{
 
 
 .nosotrosTexto{
-    display: flex;
-    flex-direction: column;
+    h2{
+        margin-top: 50px;
+    }
+    
     p{
         text-align: map-get($map: $alineacionYfuentes, $key:justificado );
-        margin: 0px 50px;
+        margin: 0px 20px;
     }
 }
 
-.nosotrosImagen{
-    background-size: cover;
-}
 
-.pasionImagen{
-    background-size: cover;
-}
+
 
 
 
@@ -340,10 +311,15 @@ a{
 }
 
 
-.pasionTexto p{
-    
-    text-align: map-get($map: $alineacionYfuentes, $key:justificado );
-    margin: 0px 50px;
+.pasionTexto{
+    h2{
+        margin-bottom: 4%;
+    } 
+    p{
+        text-align: map-get($map: $alineacionYfuentes, $key:justificado );
+        margin: 0px 20px;
+        font-size: 1.6rem;
+    }
 }
 
 /* Sección FeedBack Clientes */
@@ -353,19 +329,18 @@ a{
     margin-bottom: 10%;
     img{
         border-radius: 50%;
+        transform: scale(0.8);
     }
     
     h1{
         margin-bottom: 5%;
     }
+    p{
+        font-size: 1.5rem;
+    }
 }
 
 
-
-.fondoFeed{
-    background: $colorBase;
-    
-}
 
 .marginFeed{
     padding-top: 2%;
@@ -377,11 +352,11 @@ a{
 
 
 
-/* Sección Productos y servicios */
+/* Pagina Promociones */
 
 .servicios{
 	
-     text-align: map-get($map: $alineacionYfuentes, $key:centro );
+    text-align: map-get($map: $alineacionYfuentes, $key:centro );
     h1{
         margin-top: 60px;
     }
@@ -399,8 +374,6 @@ a{
         
     }
 }
-
-
 
 
 
@@ -437,11 +410,7 @@ a{
 }
 
 
-
-
-
-
-/*Sección Tienda*/
+/*Página Tienda*/
 
 
 
@@ -487,23 +456,15 @@ a{
 }
 
 
-
-
-
 .tarjeta{
     border: solid 3px rgba(55,85,109,1);
     @include marPad (2px, 5% 0px 10% 0px);
-    button{
-        animation-iteration-count: 1;  
-        animation-duration: 2s;
+    
+    p{
+        font-size: 1.6rem;
     }
     
 }
-
-
-
-
-
 
 
 .titulos{
@@ -516,65 +477,6 @@ a{
 /*-------------Diseños adaptables Tablet----------------*/
 
 @media screen and (max-width:1200px){
-   
-
-    /*Header*/
-    
-    
-    /* header{
-        justify-content: space-evenly;
-    } */
-
-    header{
-        display: flex;
-        justify-content: center;
-    }
-
-    .linkLogo{
-        transform: scale(0.8);
-        justify-content: center;
-
-    }
-
-    .buscador{
-        display: none;
-    }
-
-    .btnBuscador{
-        display: none;
-    }
-
-    .redes{
-        display: none;
-    }
-
-    nav ul{
-        margin-left: 0px;
-    }
-    
-    nav ul li{
-   
-        list-style-type: none;
-        margin:0px 12px;
-    }    
-    
-
-    nav ul li a{
-        
-        font-size: 1.3rem;
-    }
-
-    
-    .buscador{
-        border-radius: 20px;
-        height: 15px;
-        width: 100px;
-    }
-
-    .btn{
-    background-color: rgb(55, 85, 109);
-    }
-
    
     /* Sección Presentación del sitio*/
 
@@ -594,17 +496,27 @@ a{
 
     /*Sección Imagenes con argumentos*/
 
-    .contenImagenes{
-        flex-direction: column;
-    }
+    
 
     .imagenes{
         margin-bottom: 70px;
     }
 
+    .ventajasMargen{
+    
+        margin-bottom: 1%;
+        
+        p{
+            
+            text-align: map-get($map: $alineacionYfuentes, $key:centro )
+        }
+    }
+
+    
+
     
     
-    /* Sección Contacto */
+    /* Página Contacto */
 
     .entradas input{
         height: 35px;
@@ -617,27 +529,6 @@ a{
     
     
     /*Pagina Nosotros*/
-
-    .nosotros{
-        flex-direction: column;
-    }
-
-    .nosotrosTexto{
-        display: flex;
-        flex-direction: column;
-        margin-top: 10%;
-    }
-
-    .pasionTexto{
-        display: flex;
-        flex-direction: column;
-        margin-top: 10%;
-    }
-
-    .pasion{
-        flex-direction: column;
-
-    }
 
 
     .pasionImagen{
@@ -653,13 +544,11 @@ a{
         iframe{
             width: 80%;
         }
-    }
-    
-
-    
-
-
-
+        p{
+            @include marPad (20px 0px, 0% 15% );
+        }
+    }        
+        
 }
 
 /*------------------Diseño adaptado para Celulares----------------------*/
@@ -669,58 +558,7 @@ a{
     html{
         font-size: 45%;
     }
-
     
-
-    /*Header*/
-    
-
-    .logo{
-        justify-content: center;
-    }
-
-    .logoFont{
-        font-size: 1.9rem;
-    }
-
-    .linkLogo{
-        width: auto;
-        transform: scale(0.6);
-    }
-
-    .menuHam{
-        font-size: 25px;
-    }
-
-    nav ul li{
-        text-align: left;
-        list-style-type: none;
-        margin: 8px 0PX;
-        border: solid 3px white;
-        &:hover{
-            border: solid 3px rgba(94,151,172,1);
-        }
-    }
-
-    nav ul li a{
-        font-size: 3rem;
-    }
-    
-    
-    
-    
-
-    .buscador{
-        display: none;
-    }
-
-    .btnBuscador{
-        display: none;
-    }
-
-    .redes{
-        display: none;
-    }
 
     /*Presentación sitio*/
     .presentacion{
@@ -739,8 +577,6 @@ a{
        margin: 50px 0px;
     
    }
-
-   
 
     
 
@@ -775,36 +611,25 @@ a{
         height: 100%;
     }
 
-    /*Footer*/
-
-    footer{
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
-        div{
-            margin-top: 30px;
-        }
-        
-    }
-
-    .footerMargin{
-        margin-top: 25px;
-    }
-    
-
-   
 
     /*Pagina Nosotros*/
-
-    .pasionTexto p{
-        margin: 0px 2px;
+    
+    /* Feed */
+    .feed{
+        
+        img{
+            border-radius: 50%;
+            transform: scale(0.7);
+        }
+        
+       
+        p{
+            font-size: 1.7rem;
+        }
     }
 
-    .nosotrosTexto p{
-        margin: 0px 2px;
-    }
 
-    /*Pagina Productos y Servicios*/
+    /*Pagina Promociones*/
     .productos{
         width: auto;
     }
@@ -813,6 +638,15 @@ a{
         iframe{
             width: 100%;
         }
+        p{
+           @include marPad (60px 0px, 0px 5%) 
+        }
+    }
+
+    /* Ventajas */
+
+    .ventajasMargen{
+        transform: scale(0.6);
     }
 
     

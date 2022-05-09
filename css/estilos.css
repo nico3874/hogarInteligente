@@ -39,9 +39,7 @@ header {
   background: linear-gradient(to right, #75bdd1 17%, #75bdd1 31%, #5e97ac 49%, #37556d 80%);
   position: sticky;
   top: 0px;
-  z-index: 999;
-  height: auto;
-  margin: -4px; }
+  z-index: 999; }
 
 .navPad {
   text-align: right; }
@@ -75,14 +73,60 @@ nav ul li {
   background-color: #37556d; }
 
 .separarIconos {
-  padding-right: 50px; }
+  padding-right: 30px; }
 
 .redes {
-  margin: 5px; }
+  margin: 10px; }
   .redes img {
     transition: height 1s; }
     .redes img:hover {
       height: 30px; }
+
+/* -------------------------Diseño adaptado a tablet--------------------- */
+@media screen and (max-width: 1200px) {
+  /*Header*/
+  .buscador {
+    display: none; }
+  .btnBuscador {
+    display: none; }
+  .redes {
+    display: none; }
+  nav ul {
+    margin-left: 0px; }
+  .menuHam {
+    font-size: 25px; }
+  nav ul li {
+    text-align: left;
+    list-style-type: none;
+    margin: 8px 0PX;
+    border: solid 3px white; }
+    nav ul li:hover {
+      border: solid 3px #5e97ac; } }
+
+/*------------------- Diseño adaptado para celular-------------------- */
+@media screen and (max-width: 768px) {
+  .logoFont {
+    font-size: 1.9rem; }
+  .linkLogo {
+    width: auto;
+    transform: scale(0.6); }
+  .menuHam {
+    font-size: 25px; }
+  nav ul li {
+    text-align: left;
+    list-style-type: none;
+    margin: 8px 0PX;
+    border: solid 3px white; }
+    nav ul li:hover {
+      border: solid 3px #5e97ac; }
+  nav ul li a {
+    font-size: 3rem; }
+  .buscador {
+    display: none; }
+  .btnBuscador {
+    display: none; }
+  .redes {
+    display: none; } }
 
 /*Footer*/
 footer {
@@ -109,6 +153,17 @@ footer {
 .lineaBaja {
   border-top: solid 3px white;
   margin-top: 2%; }
+
+/* ------------------------Diseño adaptado para celulares----------------------- */
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start; }
+    footer div {
+      margin-top: 30px; }
+  .footerMargin {
+    margin-top: 25px; } }
 
 /*Reset*/
 * {
@@ -143,19 +198,12 @@ a {
 .presentacion {
   justify-content: space-around;
   background-image: url(https://www.echeverrimontes.com/hubfs/Ventajas%20y%20desventajas%20de%20la%20dom%C3%B3tica.png);
-  /* background-image: url(https://alullan.es/wp-content/uploads/2019/11/domotica-en-el-hogar-beneficios-y-ventajas-1080x675.jpg); */
-  /* background-image: url(https://www.echeverrimontes.com/hubfs/Ventajas%20y%20desventajas%20de%20la%20dom%C3%B3tica.png); */
   align-items: center;
   background-size: cover;
-  /* color: white; */
-  /* text-shadow: black 0 -2px ; */
   height: 800px;
   text-align: center; }
 
 .presentacionTitulo {
-  /*  border: solid 3px white;
-    border-radius: 20px;
-    background: $colorBase; */
   width: 30%;
   text-align: center; }
 
@@ -170,12 +218,10 @@ a {
 .argumento {
   line-height: 2;
   background: linear-gradient(to right, #75bdd1 17%, #75bdd1 31%, #5e97ac 49%, #37556d 80%);
-  height: 100%;
   text-align: center; }
   .argumento h1 {
     margin: 10% 0px 10px 0px;
-    padding: 0px 30px;
-    background-color: rgba(255, 255, 255, 0.5); }
+    padding: 0px 30px; }
   .argumento p {
     text-align: justify;
     padding: 3%;
@@ -185,9 +231,6 @@ a {
 .contenImagenes {
   margin: 100px 0px;
   text-align: center; }
-  .contenImagenes .imagenIn {
-    animation-iteration-count: 4;
-    animation-duration: 4s; }
   .contenImagenes .imagenes {
     text-align: center;
     margin: 0px 10px; }
@@ -207,20 +250,15 @@ a {
     align-self: center;
     margin-bottom: 50px;
     padding-top: 60px; }
-  .ventajas ul li {
-    margin: 60px;
-    list-style-type: none;
-    transform: scale(0.5); }
 
 .itemsAlign {
-  padding: 0px 10%;
-  background: linear-gradient(to right, #75bdd1 17%, #75bdd1 31%, #5e97ac 49%, #37556d 80%); }
+  margin: 5% 0% 10% 0%;
+  border-top: solid 3px black;
+  border-bottom: solid 3px black; }
 
 .ventajasMargen {
-  margin-bottom: 1%;
-  transform: scale(0.3); }
+  margin: 4% 0% 4% 0%; }
   .ventajasMargen p {
-    font-size: 4.5rem;
     text-align: center; }
 
 /* Sección Carrusel */
@@ -233,14 +271,13 @@ a {
   background-size: cover;
   position: relative;
   z-index: 1; }
-
-.fondo::before {
-  content: "";
-  background-color: rgba(255, 255, 255, 0.6);
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  height: 100%; }
+  .fondo::before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%; }
 
 .formCentrar {
   padding: 0px 10%;
@@ -280,27 +317,23 @@ a {
 
 /*Pagina Nosotros*/
 .nosotros {
-  margin-top: 10%;
+  margin-top: 4%;
   text-align: center; }
-  .nosotros h1 {
-    margin-bottom: 5%; }
+  .nosotros h1, .nosotros h2 {
+    margin-bottom: 4%; }
   .nosotros h3 {
     text-align: right;
     padding-right: 10%;
     margin-top: 50px; }
+  .nosotros p {
+    font-size: 1.6rem; }
 
-.nosotrosTexto {
-  display: flex;
-  flex-direction: column; }
-  .nosotrosTexto p {
-    text-align: justify;
-    margin: 0px 50px; }
+.nosotrosTexto h2 {
+  margin-top: 50px; }
 
-.nosotrosImagen {
-  background-size: cover; }
-
-.pasionImagen {
-  background-size: cover; }
+.nosotrosTexto p {
+  text-align: justify;
+  margin: 0px 20px; }
 
 .pasion {
   margin: 10% 0px;
@@ -310,26 +343,30 @@ a {
   .pasion h1 {
     margin-bottom: 5%; }
 
+.pasionTexto h2 {
+  margin-bottom: 4%; }
+
 .pasionTexto p {
   text-align: justify;
-  margin: 0px 50px; }
+  margin: 0px 20px;
+  font-size: 1.6rem; }
 
 /* Sección FeedBack Clientes */
 .feed {
   text-align: center;
   margin-bottom: 10%; }
   .feed img {
-    border-radius: 50%; }
+    border-radius: 50%;
+    transform: scale(0.8); }
   .feed h1 {
     margin-bottom: 5%; }
-
-.fondoFeed {
-  background: linear-gradient(to right, #75bdd1 17%, #75bdd1 31%, #5e97ac 49%, #37556d 80%); }
+  .feed p {
+    font-size: 1.5rem; }
 
 .marginFeed {
   padding-top: 2%; }
 
-/* Sección Productos y servicios */
+/* Pagina Promociones */
 .servicios {
   text-align: center; }
   .servicios h1 {
@@ -356,7 +393,7 @@ a {
   animation-iteration-count: 4;
   animation-duration: 4s; }
 
-/*Sección Tienda*/
+/*Página Tienda*/
 .filtros {
   margin-bottom: 7%;
   padding-left: 1%; }
@@ -387,9 +424,8 @@ a {
   border: solid 3px #37556d;
   margin: 2px;
   padding: 5% 0px 10% 0px; }
-  .tarjeta button {
-    animation-iteration-count: 1;
-    animation-duration: 2s; }
+  .tarjeta p {
+    font-size: 1.6rem; }
 
 .titulos {
   text-align: center;
@@ -397,35 +433,6 @@ a {
 
 /*-------------Diseños adaptables Tablet----------------*/
 @media screen and (max-width: 1200px) {
-  /*Header*/
-  /* header{
-        justify-content: space-evenly;
-    } */
-  header {
-    display: flex;
-    justify-content: center; }
-  .linkLogo {
-    transform: scale(0.8);
-    justify-content: center; }
-  .buscador {
-    display: none; }
-  .btnBuscador {
-    display: none; }
-  .redes {
-    display: none; }
-  nav ul {
-    margin-left: 0px; }
-  nav ul li {
-    list-style-type: none;
-    margin: 0px 12px; }
-  nav ul li a {
-    font-size: 1.3rem; }
-  .buscador {
-    border-radius: 20px;
-    height: 15px;
-    width: 100px; }
-  .btn {
-    background-color: #37556d; }
   /* Sección Presentación del sitio*/
   .presentacion {
     justify-content: none; }
@@ -434,28 +441,18 @@ a {
       position: relative;
       bottom: 110px; }
   /*Sección Imagenes con argumentos*/
-  .contenImagenes {
-    flex-direction: column; }
   .imagenes {
     margin-bottom: 70px; }
-  /* Sección Contacto */
+  .ventajasMargen {
+    margin-bottom: 1%; }
+    .ventajasMargen p {
+      text-align: center; }
+  /* Página Contacto */
   .entradas input {
     height: 35px; }
   .entradas select {
     height: 35px; }
   /*Pagina Nosotros*/
-  .nosotros {
-    flex-direction: column; }
-  .nosotrosTexto {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10%; }
-  .pasionTexto {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10%; }
-  .pasion {
-    flex-direction: column; }
   .pasionImagen {
     border-right: solid 3px #37556d;
     width: 100%;
@@ -463,37 +460,15 @@ a {
     margin-top: 10%; }
   /* Sección Productos y servicios */
   .servicios iframe {
-    width: 80%; } }
+    width: 80%; }
+  .servicios p {
+    margin: 20px 0px;
+    padding: 0% 15%; } }
 
 /*------------------Diseño adaptado para Celulares----------------------*/
 @media screen and (max-width: 768px) {
   html {
     font-size: 45%; }
-  /*Header*/
-  .logo {
-    justify-content: center; }
-  .logoFont {
-    font-size: 1.9rem; }
-  .linkLogo {
-    width: auto;
-    transform: scale(0.6); }
-  .menuHam {
-    font-size: 25px; }
-  nav ul li {
-    text-align: left;
-    list-style-type: none;
-    margin: 8px 0PX;
-    border: solid 3px white; }
-    nav ul li:hover {
-      border: solid 3px #5e97ac; }
-  nav ul li a {
-    font-size: 3rem; }
-  .buscador {
-    display: none; }
-  .btnBuscador {
-    display: none; }
-  .redes {
-    display: none; }
   /*Presentación sitio*/
   .presentacion {
     background-repeat: no-repeat; }
@@ -520,25 +495,24 @@ a {
   .carruselAncho {
     width: 100%;
     height: 100%; }
-  /*Footer*/
-  footer {
-    flex-direction: column;
-    align-items: center;
-    justify-content: start; }
-    footer div {
-      margin-top: 30px; }
-  .footerMargin {
-    margin-top: 25px; }
   /*Pagina Nosotros*/
-  .pasionTexto p {
-    margin: 0px 2px; }
-  .nosotrosTexto p {
-    margin: 0px 2px; }
-  /*Pagina Productos y Servicios*/
+  /* Feed */
+  .feed img {
+    border-radius: 50%;
+    transform: scale(0.7); }
+  .feed p {
+    font-size: 1.7rem; }
+  /*Pagina Promociones*/
   .productos {
     width: auto; }
   .servicios iframe {
     width: 100%; }
+  .servicios p {
+    margin: 60px 0px;
+    padding: 0px 5%; }
+  /* Ventajas */
+  .ventajasMargen {
+    transform: scale(0.6); }
   /* Sección Contacto */
   .entradas input {
     height: 35px; }

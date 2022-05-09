@@ -4,10 +4,7 @@ header{
     position: sticky;
     top: 0px;
     z-index: 999;
-    height: auto;
-    margin: -4px;
-
-
+    
     
 }
 
@@ -38,6 +35,7 @@ nav ul li{
 
 .linkLogo{
     padding-left: 50px;
+   
 }
 
 .logoFont{
@@ -64,12 +62,12 @@ nav ul li{
 
 
 .separarIconos{
-    padding-right: 50px;
+    padding-right: 30px;
 }
 
 
 .redes{
-    margin: 5px;
+    margin: 10px;
     
      img{
     
@@ -77,5 +75,90 @@ nav ul li{
         &:hover{
             height: 30px;
         }
+    }
+}
+
+/* -------------------------Diseño adaptado a tablet--------------------- */
+
+@media screen and (max-width:1200px){
+   
+
+    /*Header*/
+    
+    .buscador{
+        display: none;
+    }
+
+    .btnBuscador{
+        display: none;
+    }
+
+    .redes{
+        display: none;
+    }
+
+    nav ul{
+        margin-left: 0px;
+    }
+
+    .menuHam{
+        font-size: 25px;
+    }
+
+    nav ul li{
+        text-align: left;
+        list-style-type: none;
+        margin: 8px 0PX;
+        border: solid 3px white;
+        &:hover{
+            border: solid 3px rgba(94,151,172,1);
+        }
+    }
+}
+
+
+/*------------------- Diseño adaptado para celular-------------------- */
+
+@media screen and (max-width:768px){
+    
+    .logoFont{
+        font-size: 1.9rem;
+    }
+
+    .linkLogo{
+        width: auto;
+        transform: scale(0.6);
+    }
+
+    .menuHam{
+        font-size: 25px;
+    }
+
+    nav ul li{
+        text-align: left;
+        list-style-type: none;
+        margin: 8px 0PX;
+        border: solid 3px white;
+        &:hover{
+            border: solid 3px rgba(94,151,172,1);
+        }
+    }
+
+    nav ul li a{
+        font-size: 3rem;
+    }
+    
+    
+
+    .buscador{
+        display: none;
+    }
+
+    .btnBuscador{
+        display: none;
+    }
+
+    .redes{
+        display: none;
     }
 }
